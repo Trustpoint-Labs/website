@@ -829,12 +829,11 @@ const githubUrl = "https://github.com/Trustpoint-Project";
                 Fields marked * are required.
               </p>
 
-
               <form
                 name="contact"
                 method="POST"
+                action="/success/"
                 data-netlify="true"
-                data-netlify-honeypot="bot-field"
                 class="contact-form"
               >
 
@@ -843,18 +842,6 @@ const githubUrl = "https://github.com/Trustpoint-Project";
                   name="form-name"
                   value="contact"
                 />
-
-
-                <p class="honeypot">
-
-                  <label>
-                    Don't fill this out if you're human:
-
-                    <input name="bot-field" />
-                  </label>
-
-                </p>
-
 
                 <label>
                   Name *
@@ -868,7 +855,6 @@ const githubUrl = "https://github.com/Trustpoint-Project";
                   />
                 </label>
 
-
                 <label>
                   Work email *
 
@@ -880,7 +866,6 @@ const githubUrl = "https://github.com/Trustpoint-Project";
                     required
                   />
                 </label>
-
 
                 <label>
                   Company *
@@ -894,7 +879,6 @@ const githubUrl = "https://github.com/Trustpoint-Project";
                   />
                 </label>
 
-
                 <label>
                   What would you like to achieve? *
 
@@ -906,7 +890,6 @@ const githubUrl = "https://github.com/Trustpoint-Project";
                   ></textarea>
                 </label>
 
-
                 <label>
                   Number of devices
 
@@ -917,7 +900,6 @@ const githubUrl = "https://github.com/Trustpoint-Project";
                   />
                 </label>
 
-
                 <label>
                   Deployment environment
 
@@ -927,7 +909,6 @@ const githubUrl = "https://github.com/Trustpoint-Project";
                     placeholder="e.g. factory OT, edge appliance, isolated network"
                   />
                 </label>
-
 
                 <button
                   class="contact-submit"

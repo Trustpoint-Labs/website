@@ -694,11 +694,6 @@ nav .github {
   color: #8a8f96;
 }
 
-.honeypot {
-  position: absolute;
-  left: -10000px;
-}
-
 .contact-submit {
   display: flex;
   align-items: center;

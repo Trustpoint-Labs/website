@@ -1,0 +1,81 @@
+---
+import trustpointLogo from "../img/trustpoint_labs_logo.svg?url";
+import trustpointFavicon from "../img/trustpoint_favicon.png?url";
+
+import "@fontsource/open-sauce-one/400.css";
+import "@fontsource/open-sauce-one/500.css";
+import "@fontsource/open-sauce-one/600.css";
+import "@fontsource/open-sauce-one/700.css";
+
+import "../styles/global.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+
+    <meta
+      name="description"
+      content="Your inquiry has been sent to Trustpoint Labs."
+    />
+
+    <title>Thank You | Trustpoint Labs</title>
+
+    <link
+      rel="icon"
+      type="image/png"
+      href={trustpointFavicon}
+    />
+  </head>
+
+  <body>
+
+    <header class="shell">
+      <a
+        class="logo-link"
+        href="/"
+        aria-label="Trustpoint Labs"
+      >
+        <img
+          class="logo"
+          src={trustpointLogo}
+          alt="Trustpoint Labs"
+        />
+      </a>
+    </header>
+
+    <main>
+      <section class="section shell">
+        <div class="section-label">
+          <span class="square"></span>
+          INQUIRY SENT
+        </div>
+
+        <div class="offering-heading">
+          <h1>
+            Thank you for getting in touch.
+          </h1>
+
+          <p class="lede">
+            Your inquiry has been received. We will get back to you shortly.
+          </p>
+
+          <div class="actions">
+            <a
+              class="button button-primary"
+              href="/"
+            >
+              Return home
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+  </body>
+</html>
