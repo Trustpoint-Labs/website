@@ -18,6 +18,8 @@ module.exports = {
         "categories:accessibility": ["error", { minScore: 0.95 }],
         "categories:best-practices": ["error", { minScore: 0.95 }],
         "categories:seo": ["error", { minScore: 0.95 }],
+        // not meaningful for a small static site with few requests
+        "network-dependency-tree-insight": "off",
       },
     },
 
