@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "trustpoint-labs.com",
+  "Id": "4e6accfc-7c5b-401e-99f1-66e5298ae09b"
+}
