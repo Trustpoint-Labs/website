@@ -1,0 +1,30 @@
+name: Production Check
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check homepage
+        run: curl --fail https://trustpoint-labs.com/
+
+      - name: Check imprint
+        run: curl --fail https://trustpoint-labs.com/imprint
+
+      - name: Check privacy
+        run: curl --fail https://trustpoint-labs.com/privacy
+
+      - name: Check security.txt
+        run: curl --fail https://trustpoint-labs.com/.well-known/security.txt
+
+      - name: Check robots.txt
+        run: curl --fail https://trustpoint-labs.com/robots.txt
+
+      - name: Check OG image
+        run: curl --fail https://trustpoint-labs.com/og-image.png
