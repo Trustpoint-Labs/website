@@ -1,0 +1,1130 @@
+---
+import trustpointLogo from "../img/trustpoint_labs_logo.svg?url";
+import trustpointFavicon from "../img/trustpoint_favicon.png?url";
+
+import "@fontsource/open-sauce-one/400.css";
+import "@fontsource/open-sauce-one/500.css";
+import "@fontsource/open-sauce-one/600.css";
+import "@fontsource/open-sauce-one/700.css";
+
+import "../styles/global.css";
+
+const githubUrl = "https://github.com/Trustpoint-Project";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+
+    <meta
+      name="description"
+      content="Trustpoint Labs provides engineering, integration, support and OEM services for industrial machine identity and PKI."
+    />
+
+    <title>Trustpoint Labs | Industrial Machine Identity</title>
+
+    <link
+      rel="icon"
+      type="image/png"
+      href={trustpointFavicon}
+    />
+  </head>
+
+  <body>
+
+    <!-- ===================================
+         HEADER
+    ==================================== -->
+
+    <header class="shell">
+
+      <a
+        class="logo-link"
+        href="/"
+        aria-label="Trustpoint Labs"
+      >
+        <img
+          class="logo"
+          src={trustpointLogo}
+          alt="Trustpoint Labs"
+        />
+      </a>
+
+      <nav aria-label="Main navigation">
+
+        <a href="#offering">
+          Offering
+        </a>
+
+        <a href="#why-trustpoint">
+          Why Trustpoint
+        </a>
+
+        <a href="#open-source">
+          Open Source
+        </a>
+
+        <a href="#contact">
+          Contact
+        </a>
+
+        <a
+          class="github"
+          href={githubUrl}
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub
+          <span>↗</span>
+        </a>
+
+      </nav>
+
+    </header>
+
+
+    <main>
+
+      <!-- =================================
+           HERO
+      ================================== -->
+
+      <section class="hero">
+
+        <div class="hero-content shell">
+
+          <div class="kicker">
+            <span class="square"></span>
+            INDUSTRIAL MACHINE IDENTITY
+          </div>
+
+          <h1>
+            Industrial machine identity.<br />
+            <span class="hero-accent">
+              Implemented for your environment.
+            </span>
+          </h1>
+
+          <p class="hero-description">
+            Trustpoint Labs helps manufacturers and operators deploy
+            secure machine identities, automate certificate lifecycles
+            and integrate industrial PKI into real OT environments.
+          </p>
+
+          <div class="actions">
+
+            <a
+              class="button button-primary"
+              href="#offering"
+            >
+              Explore our offering
+              <span>↓</span>
+            </a>
+
+            <a
+              class="button button-secondary"
+              href={githubUrl}
+              target="_blank"
+              rel="noreferrer"
+            >
+              View Trustpoint on GitHub
+              <span>↗</span>
+            </a>
+
+          </div>
+
+          <div class="hero-note">
+            Open-source foundation · Industrial integration · Engineering support
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =================================
+           PROBLEM / SOLUTION
+      ================================== -->
+
+      <section
+        class="section shell"
+        id="trustpoint"
+      >
+
+        <div class="section-label">
+          <span class="square"></span>
+          WHAT WE SOLVE
+        </div>
+
+        <div class="two-col">
+
+          <div>
+
+            <h2>
+              Secure machine identities
+              in industrial environments.
+            </h2>
+
+            <p class="lede">
+              Connected factories increasingly depend on secure
+              communication, authentication and lifecycle-managed
+              digital identities.
+            </p>
+
+            <p class="lede">
+              Trustpoint brings PKI close to devices and machines —
+              including segmented and offline OT networks.
+            </p>
+
+          </div>
+
+
+          <div>
+
+            <article class="feature">
+
+              <span class="feature-index">
+                01
+              </span>
+
+              <div>
+                <h3>Machine identity</h3>
+
+                <p>
+                  Establish trusted identities for industrial
+                  devices and machines.
+                </p>
+              </div>
+
+              <span class="feature-glyph">
+                +
+              </span>
+
+            </article>
+
+
+            <article class="feature">
+
+              <span class="feature-index">
+                02
+              </span>
+
+              <div>
+                <h3>Certificate lifecycle</h3>
+
+                <p>
+                  Automate enrollment, renewal and lifecycle
+                  management for device certificates.
+                </p>
+              </div>
+
+              <span class="feature-glyph">
+                ↔
+              </span>
+
+            </article>
+
+
+            <article class="feature">
+
+              <span class="feature-index">
+                03
+              </span>
+
+              <div>
+                <h3>Industrial PKI</h3>
+
+                <p>
+                  Connect devices and OT systems to local or
+                  enterprise PKI infrastructure.
+                </p>
+              </div>
+
+              <span class="feature-glyph">
+                ↗
+              </span>
+
+            </article>
+
+
+            <article class="feature">
+
+              <span class="feature-index">
+                04
+              </span>
+
+              <div>
+                <h3>Device onboarding</h3>
+
+                <p>
+                  Support manual brownfield onboarding as well
+                  as automated deployment workflows.
+                </p>
+              </div>
+
+              <span class="feature-glyph">
+                →
+              </span>
+
+            </article>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =================================
+           OFFERING
+      ================================== -->
+
+      <section
+        class="offering section"
+        id="offering"
+      >
+
+        <div class="shell">
+
+          <div class="section-label">
+            <span class="square"></span>
+            OFFERING
+          </div>
+
+          <div class="offering-heading">
+
+            <h2>
+              From open-source technology
+              to production deployment.
+            </h2>
+
+            <p class="lede">
+              Trustpoint Labs provides engineering, integration,
+              support and OEM services around the Trustpoint
+              open-source platform.
+            </p>
+
+          </div>
+
+
+          <div class="offering-grid">
+
+            <article class="offering-card">
+
+              <span class="offering-index">
+                01
+              </span>
+
+              <h3>
+                Engineering & Integration
+              </h3>
+
+              <p>
+                Integrate Trustpoint into your devices,
+                applications and PKI infrastructure.
+              </p>
+
+              <ul>
+                <li>Device onboarding workflows</li>
+                <li>CMP / EST integration</li>
+                <li>OPC UA / GDS integration</li>
+                <li>Custom connectors and plugins</li>
+                <li>Architecture and implementation support</li>
+              </ul>
+
+            </article>
+
+
+            <article class="offering-card">
+
+              <span class="offering-index">
+                02
+              </span>
+
+              <h3>
+                Support & SLA
+              </h3>
+
+              <p>
+                Technical support for production deployments
+                and operational Trustpoint environments.
+              </p>
+
+              <ul>
+                <li>Business-hours support</li>
+                <li>Incident response</li>
+                <li>Troubleshooting</li>
+                <li>Upgrade assistance</li>
+                <li>Hands-on engineering support</li>
+              </ul>
+
+            </article>
+
+
+            <article class="offering-card">
+
+              <span class="offering-index">
+                03
+              </span>
+
+              <h3>
+                OEM & White Label
+              </h3>
+
+              <p>
+                Use Trustpoint as the technology foundation
+                for your own market-facing product.
+              </p>
+
+              <ul>
+                <li>White-label development</li>
+                <li>Embedded or containerized deployment</li>
+                <li>Customer-specific maintenance</li>
+                <li>Third-level support</li>
+                <li>Long-term engineering partnership</li>
+              </ul>
+
+            </article>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =================================
+           WHY TRUSTPOINT
+      ================================== -->
+
+      <section
+        class="highlight"
+        id="why-trustpoint"
+      >
+
+        <div class="highlight-inner shell">
+
+          <div class="section-label section-label-light">
+            WHY TRUSTPOINT
+          </div>
+
+          <div class="highlight-grid">
+
+            <h2>
+              Built for
+              industrial OT.
+            </h2>
+
+            <p>
+              Machine identity management built for real-world
+              industrial environments — open, interoperable and
+              designed around operational constraints.
+            </p>
+
+          </div>
+
+
+          <div class="usp-grid">
+
+            <article class="usp-item">
+              <span>01</span>
+
+              <h3>
+                OT-native architecture
+              </h3>
+
+              <p>
+                Built for industrial networks and operating constraints.
+              </p>
+            </article>
+
+
+            <article class="usp-item">
+              <span>02</span>
+
+              <h3>
+                Local, offline & edge deployment
+              </h3>
+
+              <p>
+                Works without permanent cloud connectivity,
+                including air-gapped environments.
+              </p>
+            </article>
+
+
+            <article class="usp-item">
+              <span>03</span>
+
+              <h3>
+                Brownfield & legacy support
+              </h3>
+
+              <p>
+                Integrates existing devices alongside modern
+                automated onboarding.
+              </p>
+            </article>
+
+
+            <article class="usp-item">
+              <span>04</span>
+
+              <h3>
+                Native OPC UA / GDS integration
+              </h3>
+
+              <p>
+                Supports OPC UA certificate management and
+                GDS workflows.
+              </p>
+            </article>
+
+
+            <article class="usp-item">
+              <span>05</span>
+
+              <h3>
+                Open source & auditable
+              </h3>
+
+              <p>
+                Transparent, reviewable and independently extensible.
+              </p>
+            </article>
+
+
+            <article class="usp-item">
+              <span>06</span>
+
+              <h3>
+                Sovereignty & vendor independence
+              </h3>
+
+              <p>
+                Open standards and local deployment help reduce
+                vendor lock-in.
+              </p>
+            </article>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =================================
+           HOW WE WORK
+      ================================== -->
+
+      <section class="section shell">
+
+        <div class="section-label">
+          <span class="square"></span>
+          HOW WE WORK
+        </div>
+
+        <div class="process-heading">
+
+          <h2>
+            Start small.
+            Integrate.
+            Scale.
+          </h2>
+
+        </div>
+
+
+        <div class="process-grid">
+
+          <article class="process-item">
+
+            <span class="process-index">
+              01
+            </span>
+
+            <h3>
+              Discovery
+            </h3>
+
+            <p>
+              We review your devices, network architecture,
+              PKI environment and onboarding requirements.
+            </p>
+
+          </article>
+
+
+          <article class="process-item">
+
+            <span class="process-index">
+              02
+            </span>
+
+            <h3>
+              Integration
+            </h3>
+
+            <p>
+              We implement Trustpoint, required protocols,
+              connectors and customer-specific workflows.
+            </p>
+
+          </article>
+
+
+          <article class="process-item">
+
+            <span class="process-index">
+              03
+            </span>
+
+            <h3>
+              Operation
+            </h3>
+
+            <p>
+              We support the deployment through engineering
+              support, maintenance or SLA services.
+            </p>
+
+          </article>
+
+        </div>
+
+      </section>
+
+
+      <!-- =================================
+           DEPLOYMENT MODELS
+      ================================== -->
+
+      <section class="deployment section">
+
+        <div class="shell">
+
+          <div class="section-label">
+            <span class="square"></span>
+            DEPLOYMENT MODELS
+          </div>
+
+          <div class="deployment-heading">
+
+            <h2>
+              Flexible deployment
+              for industrial environments.
+            </h2>
+
+          </div>
+
+
+          <div class="deployment-grid">
+
+            <article class="deployment-card">
+
+              <span>
+                01
+              </span>
+
+              <h3>
+                Local OT Edge
+              </h3>
+
+              <p>
+                Trustpoint deployed close to machines and devices
+                inside the OT environment.
+              </p>
+
+            </article>
+
+
+            <article class="deployment-card">
+
+              <span>
+                02
+              </span>
+
+              <h3>
+                RA Mode
+              </h3>
+
+              <p>
+                Trustpoint connects industrial OT to an
+                authoritative enterprise PKI.
+              </p>
+
+            </article>
+
+
+            <article class="deployment-card">
+
+              <span>
+                03
+              </span>
+
+              <h3>
+                Local CA
+              </h3>
+
+              <p>
+                Independent certificate authority for isolated,
+                segmented or offline environments.
+              </p>
+
+            </article>
+
+
+            <article class="deployment-card">
+
+              <span>
+                04
+              </span>
+
+              <h3>
+                OEM Integration
+              </h3>
+
+              <p>
+                Trustpoint embedded into a customer's hardware
+                or software product.
+              </p>
+
+            </article>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =================================
+           OPEN SOURCE
+      ================================== -->
+
+      <section
+        class="section shell"
+        id="open-source"
+      >
+
+        <div class="section-label">
+          <span class="square"></span>
+          OPEN SOURCE
+        </div>
+
+        <div class="two-col">
+
+          <div>
+
+            <h2>
+              Open at the core.
+            </h2>
+
+          </div>
+
+
+          <div>
+
+            <p class="open-source-copy">
+              Trustpoint is available as open-source software
+              under the MIT license.
+            </p>
+
+            <p class="open-source-copy">
+              The open-source foundation provides transparency,
+              auditability and vendor independence. Trustpoint Labs
+              builds commercial engineering, integration, support
+              and OEM services around that foundation.
+            </p>
+
+            <div class="open-source-actions">
+
+              <a
+                class="button button-primary"
+                href={githubUrl}
+                target="_blank"
+                rel="noreferrer"
+              >
+                View GitHub
+                <span>↗</span>
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =================================
+           CONTACT
+      ================================== -->
+
+      <section
+        class="contact section"
+        id="contact"
+      >
+
+        <div class="shell">
+
+          <div class="section-label">
+            <span class="square"></span>
+            GET IN TOUCH
+          </div>
+
+          <div class="contact-grid">
+
+            <div class="contact-copy">
+
+              <h2>
+                Let's build your
+                machine identity infrastructure.
+              </h2>
+
+              <p class="lede">
+                Tell us about your devices, PKI environment
+                or integration requirements.
+              </p>
+
+              <div class="contact-next">
+
+                <h3>
+                  Start with the right scope.
+                </h3>
+
+                <p>
+                  We can start with a technical workshop,
+                  integration sprint or pilot deployment.
+                  Early-stage requirements are completely fine.
+                </p>
+
+              </div>
+
+              <p class="contact-email">
+                Prefer email?
+
+                <a href="mailto:trustpoint@campus-schwarzwald.de">
+                  trustpoint@campus-schwarzwald.de ↗
+                </a>
+              </p>
+
+            </div>
+
+
+            <div class="contact-panel">
+
+              <h3>
+                Discuss your deployment
+              </h3>
+
+              <p class="contact-note">
+                Fields marked * are required.
+              </p>
+
+
+              <form
+                name="contact"
+                method="POST"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+                class="contact-form"
+              >
+
+                <input
+                  type="hidden"
+                  name="form-name"
+                  value="contact"
+                />
+
+
+                <p class="honeypot">
+
+                  <label>
+                    Don't fill this out if you're human:
+
+                    <input name="bot-field" />
+                  </label>
+
+                </p>
+
+
+                <label>
+                  Name *
+
+                  <input
+                    type="text"
+                    name="name"
+                    autocomplete="name"
+                    placeholder="Your name"
+                    required
+                  />
+                </label>
+
+
+                <label>
+                  Work email *
+
+                  <input
+                    type="email"
+                    name="email"
+                    autocomplete="email"
+                    placeholder="you@company.com"
+                    required
+                  />
+                </label>
+
+
+                <label>
+                  Company *
+
+                  <input
+                    type="text"
+                    name="company"
+                    autocomplete="organization"
+                    placeholder="Company or organization"
+                    required
+                  />
+                </label>
+
+
+                <label>
+                  What would you like to achieve? *
+
+                  <textarea
+                    name="message"
+                    rows="5"
+                    placeholder="Devices, PKI environment, integration requirements or project idea"
+                    required
+                  ></textarea>
+                </label>
+
+
+                <label>
+                  Number of devices
+
+                  <input
+                    type="text"
+                    name="devices"
+                    placeholder="e.g. 25, 500, 5,000+"
+                  />
+                </label>
+
+
+                <label>
+                  Deployment environment
+
+                  <input
+                    type="text"
+                    name="deployment"
+                    placeholder="e.g. factory OT, edge appliance, isolated network"
+                  />
+                </label>
+
+
+                <button
+                  class="contact-submit"
+                  type="submit"
+                >
+                  <span>Send inquiry</span>
+                  <span aria-hidden="true">→</span>
+                </button>
+
+              </form>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =================================
+           FAQ
+      ================================== -->
+
+      <section
+        class="faq section shell"
+        aria-labelledby="faq-label"
+      >
+
+        <div
+          class="section-label"
+          id="faq-label"
+        >
+          A FEW PRACTICAL DETAILS
+        </div>
+
+        <div class="faq-layout">
+
+          <h2>
+            Good to know.
+          </h2>
+
+
+          <div class="faq-list">
+
+            <details>
+
+              <summary>
+                What is Trustpoint Labs?
+                <span aria-hidden="true">+</span>
+              </summary>
+
+              <p>
+                Trustpoint Labs provides commercial engineering,
+                integration, support and OEM services around
+                the Trustpoint open-source platform.
+              </p>
+
+            </details>
+
+
+            <details>
+
+              <summary>
+                What is Trustpoint?
+                <span aria-hidden="true">+</span>
+              </summary>
+
+              <p>
+                Trustpoint is an open-source platform for managing
+                digital machine identities in industrial environments.
+                It supports local and edge deployment and certificate
+                lifecycle workflows for industrial devices.
+              </p>
+
+            </details>
+
+
+            <details>
+
+              <summary>
+                Which protocols are supported?
+                <span aria-hidden="true">+</span>
+              </summary>
+
+              <p>
+                Trustpoint supports certificate management and
+                enrollment workflows using technologies including
+                CMP, EST, REST and OPC UA GDS Push.
+              </p>
+
+            </details>
+
+
+            <details>
+
+              <summary>
+                Can Trustpoint run offline?
+                <span aria-hidden="true">+</span>
+              </summary>
+
+              <p>
+                Yes. Trustpoint is designed for local and edge
+                deployment and can operate in segmented or
+                air-gapped OT environments without permanent
+                cloud connectivity.
+              </p>
+
+            </details>
+
+
+            <details>
+
+              <summary>
+                Is Trustpoint open source?
+                <span aria-hidden="true">+</span>
+              </summary>
+
+              <p>
+                Yes. Trustpoint is currently distributed under
+                the MIT license.
+              </p>
+
+            </details>
+
+
+            <details>
+
+              <summary>
+                Do you offer support for production deployments?
+                <span aria-hidden="true">+</span>
+              </summary>
+
+              <p>
+                Yes. Trustpoint Labs offers engineering support,
+                integration assistance, maintenance and SLA-based
+                support for commercial deployments.
+              </p>
+
+            </details>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+
+
+    <!-- ===================================
+         FOOTER
+    ==================================== -->
+
+    <footer>
+
+      <div class="footer-inner shell">
+
+        <a
+          href="/"
+          aria-label="Trustpoint Labs"
+        >
+          <img
+            class="footer-logo"
+            src={trustpointLogo}
+            alt="Trustpoint Labs"
+          />
+        </a>
+
+
+        <div class="footer-links">
+
+          <a href="#offering">
+            Offering
+          </a>
+
+          <a
+            href={githubUrl}
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub ↗
+          </a>
+
+          <a href="/imprint">
+            Imprint
+          </a>
+
+          <a href="/privacy">
+            Privacy
+          </a>
+
+        </div>
+
+      </div>
+
+    </footer>
+
+  </body>
+</html>
