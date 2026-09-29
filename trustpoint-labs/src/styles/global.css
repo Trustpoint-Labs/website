@@ -368,7 +368,7 @@ nav .github {
 }
 
 .offering-card li::before {
-  content: "→";
+  content: "→︎";
 
   margin-right: 10px;
 
