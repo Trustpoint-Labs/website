@@ -1,0 +1,123 @@
+# Trustpoint Labs
+
+> Trustpoint Labs provides engineering, integration, support and OEM services
+> for industrial machine identity and PKI. We help manufacturers and operators
+> deploy secure machine identities, automate certificate lifecycles and
+> integrate industrial PKI into real OT environments.
+
+## Home (https://trustpoint-labs.com/)
+
+### What we solve
+
+Connected factories increasingly depend on secure communication,
+authentication and lifecycle-managed digital identities. Trustpoint brings
+PKI close to devices and machines — including segmented and offline OT
+networks.
+
+- Machine identity: Establish trusted identities for industrial devices and machines.
+- Certificate lifecycle: Automate enrollment, renewal and lifecycle management for device certificates.
+- Industrial PKI: Connect devices and OT systems to local or enterprise PKI infrastructure.
+- Device onboarding: Support manual brownfield onboarding as well as automated deployment workflows.
+
+### Offering
+
+Trustpoint Labs provides engineering, integration, support and OEM services
+around the Trustpoint open-source platform.
+
+1. **Engineering & Integration** — Integrate Trustpoint into your devices, applications and PKI infrastructure.
+   - Device onboarding workflows
+   - CMP / EST integration
+   - OPC UA / GDS integration
+   - Custom connectors and plugins
+   - Architecture and implementation support
+2. **Support & SLA** — Technical support for production deployments and operational Trustpoint environments.
+   - Business-hours support
+   - Incident response
+   - Troubleshooting
+   - Upgrade assistance
+   - Hands-on engineering support
+3. **OEM & White Label** — Use Trustpoint as the technology foundation for your own market-facing product.
+   - White-label development
+   - Embedded or containerized deployment
+   - Customer-specific maintenance
+   - Third-level support
+   - Long-term engineering partnership
+
+### Why Trustpoint
+
+Machine identity management built for real-world industrial environments —
+open, interoperable and designed around operational constraints.
+
+1. OT-native architecture — Built for industrial networks and operating constraints.
+2. Local, offline & edge deployment — Works without permanent cloud connectivity, including air-gapped environments.
+3. Brownfield & legacy support — Integrates existing devices alongside modern automated onboarding.
+4. Native OPC UA / GDS integration — Supports OPC UA certificate management and GDS workflows.
+5. Open source & auditable — Transparent, reviewable and independently extensible.
+6. Sovereignty & vendor independence — Open standards and local deployment help reduce vendor lock-in.
+
+### How we work
+
+1. Discovery — We review your devices, network architecture, PKI environment and onboarding requirements.
+2. Integration — We implement Trustpoint, required protocols, connectors and customer-specific workflows.
+3. Operation — We support the deployment through engineering support, maintenance or SLA services.
+
+### Deployment models
+
+1. Local OT Edge — Trustpoint deployed close to machines and devices inside the OT environment.
+2. RA Mode — Trustpoint connects industrial OT to an authoritative enterprise PKI.
+3. Local CA — Independent certificate authority for isolated, segmented or offline environments.
+4. OEM Integration — Trustpoint embedded into a customer's hardware or software product.
+
+### Open source
+
+Trustpoint is available as open-source software under the MIT license. The
+open-source foundation provides transparency, auditability and vendor
+independence. Trustpoint Labs builds commercial engineering, integration,
+support and OEM services around that foundation.
+
+- GitHub: https://github.com/Trustpoint-Project
+
+### Contact
+
+Tell us about your devices, PKI environment or integration requirements. We
+can start with a technical workshop, integration sprint or pilot deployment —
+early-stage requirements are completely fine.
+
+- Contact form: https://trustpoint-labs.com/#contact
+- Email: trustpoint@campus-schwarzwald.de
+
+### FAQ
+
+- **What is Trustpoint Labs?** Trustpoint Labs provides commercial engineering, integration, support and OEM services around the Trustpoint open-source platform.
+- **What is Trustpoint?** Trustpoint is an open-source platform for managing digital machine identities in industrial environments. It supports local and edge deployment and certificate lifecycle workflows for industrial devices.
+- **Which protocols are supported?** Trustpoint supports certificate management and enrollment workflows using technologies including CMP, EST, REST and OPC UA GDS Push.
+- **Can Trustpoint run offline?** Yes. Trustpoint is designed for local and edge deployment and can operate in segmented or air-gapped OT environments without permanent cloud connectivity.
+- **Is Trustpoint open source?** Yes. Trustpoint is currently distributed under the MIT license.
+- **Do you offer support for production deployments?** Yes. Trustpoint Labs offers engineering support, integration assistance, maintenance and SLA-based support for commercial deployments.
+
+## Imprint (https://trustpoint-labs.com/imprint)
+
+Trustpoint Labs is currently operated as an initiative of Campus Schwarzwald
+gGmbH; Trustpoint Labs GmbH has not yet been established as a separate legal
+entity.
+
+- Company: Campus Schwarzwald gGmbH, Herzog-Eberhard-Straße 56, 72250 Freudenstadt, Germany
+- Commercial register: HRB 759245, Amtsgericht Stuttgart
+- Represented by: Stefan Bogenrieder
+- Phone: +49 7441 868490-0
+- Email: info@campus-schwarzwald.de
+- VAT ID: DE310457061
+
+Trustpoint is an open-source software project. References to "Trustpoint
+Labs" on this website currently describe the commercialisation and transfer
+activities operated by Campus Schwarzwald gGmbH and do not denote a
+separately incorporated company.
+
+## Privacy Policy (https://trustpoint-labs.com/privacy)
+
+Explains how personal data is processed when visiting the website or
+contacting Trustpoint Labs through the website.
+
+- Controller: Campus Schwarzwald gGmbH, Herzog-Eberhard-Straße 56, 72250 Freudenstadt, Germany
+- Hosting: Netlify, Inc. (San Francisco, California, USA); technical access data (e.g. IP address, timestamp, requested resource, browser/OS) may be processed under Art. 6(1)(f) GDPR; international transfers safeguarded via EU Standard Contractual Clauses and, where applicable, the EU-U.S. Data Privacy Framework.
+- Contact form: Data submitted (name, work email, company, message, device count, deployment environment) is processed to respond to inquiries, based on Art. 6(1)(b) or 6(1)(f) GDPR, and is transmitted to and processed by Netlify Forms on Trustpoint Labs' behalf.
