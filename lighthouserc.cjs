@@ -1,0 +1,30 @@
+module.exports = {
+  ci: {
+    collect: {
+      staticDistDir: "./trustpoint-labs/dist",
+      url: [
+        "http://localhost/",
+        "http://localhost/imprint/",
+        "http://localhost/privacy/",
+      ],
+      numberOfRuns: 3,
+    },
+
+    assert: {
+      preset: "lighthouse:recommended",
+
+      assertions: {
+        "categories:performance": ["warn", { minScore: 0.9 }],
+        "categories:accessibility": ["error", { minScore: 0.95 }],
+        "categories:best-practices": ["error", { minScore: 0.95 }],
+        "categories:seo": ["error", { minScore: 0.95 }],
+        // not meaningful for a small static site with few requests
+        "network-dependency-tree-insight": "off",
+      },
+    },
+
+    upload: {
+      target: "temporary-public-storage",
+    },
+  },
+};

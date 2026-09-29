@@ -375,7 +375,6 @@ nav .github {
   color: var(--trustpoint-blue);
 }
 
-
 /* =========================================
    WHY TRUSTPOINT / USP
 ========================================= */
@@ -416,7 +415,7 @@ nav .github {
 
   margin-bottom: 22px;
 
-  color: rgba(255, 255, 255, 0.65);
+  color: rgba(255, 255, 255, 0.75);
 
   font-size: 12px;
   font-weight: 600;
@@ -439,7 +438,6 @@ nav .github {
   font-size: 16px;
   line-height: 1.5;
 }
-
 
 /* =========================================
    PROCESS
@@ -499,7 +497,6 @@ nav .github {
   font-size: 16px;
   line-height: 1.55;
 }
-
 
 /* =========================================
    DEPLOYMENT
@@ -567,7 +564,6 @@ nav .github {
   line-height: 1.55;
 }
 
-
 /* =========================================
    OPEN SOURCE
 ========================================= */
@@ -586,7 +582,6 @@ nav .github {
 .open-source-actions {
   margin-top: 34px;
 }
-
 
 /* =========================================
    CONTACT
@@ -793,13 +788,11 @@ footer {
   color: var(--trustpoint-blue);
 }
 
-
 /* =========================================
    RESPONSIVE ADDITIONS
 ========================================= */
 
 @media (max-width: 1000px) {
-
   .two-col,
   .highlight-grid,
   .contact-grid,
@@ -857,7 +850,6 @@ footer {
 }
 
 @media (max-width: 700px) {
-
   .shell {
     width: min(100% - 32px, 1328px);
   }

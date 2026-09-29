@@ -1,0 +1,83 @@
+name: Website CI
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+
+jobs:
+  build:
+    name: Build and validate
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install site dependencies
+        working-directory: trustpoint-labs
+        run: npm ci
+
+      - name: Astro check
+        working-directory: trustpoint-labs
+        run: npx astro check
+
+      - name: Check formatting
+        run: npx prettier --check .
+
+      - name: Build Astro site
+        working-directory: trustpoint-labs
+        run: npm run build
+
+      - name: Check required public files
+        working-directory: trustpoint-labs
+        run: |
+          test -f public/robots.txt
+          test -f public/llms.txt
+          test -f public/agents.txt
+          test -f public/.well-known/security.txt
+          test -f public/apple-touch-icon.png
+          test -f public/apple-touch-icon-precomposed.png
+          test -f public/og-image.png
+
+  lighthouse:
+    name: Lighthouse
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install site dependencies
+        working-directory: trustpoint-labs
+        run: npm ci
+
+      - name: Install Lighthouse CI
+        run: npm install -g @lhci/cli@0.15.x
+
+      - name: Build Astro site
+        working-directory: trustpoint-labs
+        run: npm run build
+
+      - name: Run Lighthouse CI
+        run: lhci autorun
