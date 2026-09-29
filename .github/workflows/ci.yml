@@ -51,7 +51,6 @@ jobs:
           test -f public/apple-touch-icon-precomposed.png
           test -f public/og-image.png
 
-
   lighthouse:
     name: Lighthouse
     runs-on: ubuntu-latest
