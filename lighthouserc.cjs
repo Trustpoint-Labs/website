@@ -1,7 +1,7 @@
 module.exports = {
   ci: {
     collect: {
-      staticDistDir: "./dist",
+      staticDistDir: "./trustpoint-labs/dist",
       url: [
         "http://localhost/",
         "http://localhost/imprint/",

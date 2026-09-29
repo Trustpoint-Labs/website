@@ -25,16 +25,23 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Install site dependencies
+        working-directory: trustpoint-labs
+        run: npm ci
+
       - name: Astro check
+        working-directory: trustpoint-labs
         run: npx astro check
 
       - name: Check formatting
         run: npx prettier --check .
 
       - name: Build Astro site
+        working-directory: trustpoint-labs
         run: npm run build
 
       - name: Check required public files
+        working-directory: trustpoint-labs
         run: |
           test -f public/robots.txt
           test -f public/llms.txt
@@ -62,10 +69,15 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Install site dependencies
+        working-directory: trustpoint-labs
+        run: npm ci
+
       - name: Install Lighthouse CI
         run: npm install -g @lhci/cli@0.15.x
 
       - name: Build Astro site
+        working-directory: trustpoint-labs
         run: npm run build
 
       - name: Run Lighthouse CI
