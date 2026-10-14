@@ -1,0 +1,1880 @@
+---
+import trustpointLogo from "../img/trustpoint_labs_logo.svg?url";
+import trustpointProductLogo from "../img/trustpoint_logo.svg?url";
+import trustpointFavicon from "../img/trustpoint_favicon.png?url";
+
+import "@fontsource/open-sauce-one/400.css";
+import "@fontsource/open-sauce-one/500.css";
+import "@fontsource/open-sauce-one/600.css";
+import "@fontsource/open-sauce-one/700.css";
+
+import "../styles/global.css";
+
+const githubUrl = "https://github.com/Trustpoint-Project";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Use Cases | Trustpoint Labs</title>
+
+    <meta
+      name="description"
+      content="Explore Trustpoint use cases across industrial automation, building automation, critical infrastructure and defence — from OEM and white-label integration to domain and operator deployments."
+    />
+
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://trustpoint-labs.com/use-cases" />
+    <link rel="icon" type="image/png" href={trustpointFavicon} />
+  </head>
+
+  <body>
+    <header class="shell">
+      <a class="logo-link" href="/" aria-label="Trustpoint Labs">
+        <img
+          class="logo"
+          src={trustpointLogo}
+          alt="Trustpoint Labs"
+          width="205"
+          height="115"
+        />
+      </a>
+
+      <nav aria-label="Main navigation">
+        <a href="/">Home</a>
+        <a
+          class="github"
+          href={githubUrl}
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub
+          <span>↗︎</span>
+        </a>
+      </nav>
+    </header>
+
+    <main class="use-cases-page">
+      <section class="use-cases-hero shell" id="overview">
+        <div class="section-label">
+          <span class="square"></span>
+          USE CASES
+        </div>
+
+        <div class="use-cases-hero-grid">
+          <div>
+            <h1>
+              Machine identity across products, domains and infrastructure.
+            </h1>
+          </div>
+
+          <div>
+            <p class="use-cases-lede">
+              Trustpoint can be embedded into products, integrated into
+              operational domains, or connected to operator-wide PKI and
+              identity infrastructures.
+            </p>
+
+            <p class="use-cases-note">
+              Explore how the same machine-identity foundation can be applied
+              across industrial automation, building automation, critical
+              infrastructure and defence environments.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="use-cases-layout shell">
+        <aside class="use-cases-sidebar" aria-label="Use cases page navigation">
+          <nav>
+            <a href="#overview" class="use-cases-sidebar-link is-active">Overview</a>
+            <a href="#explorer" class="use-cases-sidebar-link">Use Case Explorer</a>
+            <a href="#integration-levels" class="use-cases-sidebar-link">Integration Levels</a>
+            <a href="#verticals" class="use-cases-sidebar-link">Verticals</a>
+            <a href="#device-personalization" class="use-cases-sidebar-link">Device Personalization</a>
+            <a href="#capabilities" class="use-cases-sidebar-link">Common Capabilities</a>
+            <a href="#start-project" class="use-cases-sidebar-link">Start a Project</a>
+          </nav>
+        </aside>
+
+        <div class="use-cases-content">
+          <section id="explorer" class="use-cases-section explorer-section">
+            <div class="section-label compact-label">
+              <span class="square"></span>
+              USE CASE EXPLORER
+            </div>
+
+            <h2>Choose your environment. Then choose where Trustpoint fits.</h2>
+
+            <p>
+              Select a vertical and integration level to explore a representative
+              deployment pattern, typical assets, relevant capabilities and the
+              role Trustpoint can play in that environment.
+            </p>
+
+            <div class="selector-block">
+              <div class="selector-heading">
+                <span>01</span>
+                <div>
+                  <strong>Choose a vertical</strong>
+                  <small id="vertical-description">
+                    Machines, robots, production cells and plants with heterogeneous OT assets and lifecycle-managed machine identities.
+                  </small>
+                </div>
+              </div>
+
+              <div class="selector-row" role="group" aria-label="Choose a vertical">
+                <button class="selector-button vertical-button is-selected" type="button" data-vertical="industrial">Industrial</button>
+                <button class="selector-button vertical-button" type="button" data-vertical="building">Building Automation</button>
+                <button class="selector-button vertical-button" type="button" data-vertical="critical">Critical Infrastructure</button>
+                <button class="selector-button vertical-button" type="button" data-vertical="defence">Defence</button>
+              </div>
+            </div>
+
+            <div class="selector-block">
+              <div class="selector-heading">
+                <span>02</span>
+                <div>
+                  <strong>Choose an integration level</strong>
+                  <small>From embedded product integration to operator-wide infrastructure.</small>
+                </div>
+              </div>
+
+              <div class="selector-row" role="group" aria-label="Choose an integration level">
+                <button class="selector-button level-button" type="button" data-level="oem">OEM / White Label</button>
+                <button class="selector-button level-button is-selected" type="button" data-level="domain">Domain Integration</button>
+                <button class="selector-button level-button" type="button" data-level="operator">Operator Integration</button>
+              </div>
+            </div>
+
+            <div class="scenario-panel" aria-live="polite">
+              <div class="scenario-copy">
+                <div class="scenario-kicker" id="scenario-kicker">INDUSTRIAL · DOMAIN INTEGRATION</div>
+                <h3 id="scenario-title">Machine, robot or production-cell identity management</h3>
+
+                <div class="scenario-detail">
+                  <span>Typical environment</span>
+                  <p id="scenario-environment"></p>
+                </div>
+
+                <div class="scenario-detail">
+                  <span>Trustpoint role</span>
+                  <p id="scenario-role"></p>
+                </div>
+
+                <div class="scenario-detail">
+                  <span>Typical assets</span>
+                  <div class="tag-list" id="scenario-assets"></div>
+                </div>
+
+                <div class="scenario-detail">
+                  <span>Relevant capabilities</span>
+                  <div class="tag-list" id="scenario-capabilities"></div>
+                </div>
+
+                <div class="scenario-outcome">
+                  <span>Outcome</span>
+                  <strong id="scenario-outcome"></strong>
+                </div>
+
+                <a id="scenario-cta" class="button button-primary scenario-cta" href="/#contact">
+                  Discuss a domain integration
+                  <span>→︎</span>
+                </a>
+              </div>
+
+              <div class="architecture-panel" aria-label="Representative deployment topology">
+                <div class="architecture-label">DEPLOYMENT TOPOLOGY</div>
+                <div class="deployment-topology">
+                  <div class="optional-pki" id="arch-operator">
+                    <div class="optional-pki-heading">
+                      <span class="optional-pki-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" role="presentation" fill="none" stroke="currentColor">
+                          <path d="M12 3 4.5 7v5.5c0 4.8 3.2 7.7 7.5 8.5 4.3-.8 7.5-3.7 7.5-8.5V7L12 3Z" />
+                          <path d="M9.5 12.2 11.2 14l3.6-4" />
+                        </svg>
+                      </span>
+                      <div>
+                        <span class="optional-badge">OPTIONAL</span>
+                        <small>AUTHORITY / CENTRAL PKI</small>
+                      </div>
+                    </div>
+                    <strong id="arch-operator-label">Enterprise PKI / Plant PKI</strong>
+                  </div>
+
+                  <div class="optional-connector" aria-hidden="true">
+                    <span></span>
+                    <i></i>
+                  </div>
+
+                  <div
+                    id="topology-body"
+                    class="topology-body"
+                    data-trustpoint-logo={trustpointProductLogo}
+                  ></div>
+                </div>
+
+                <p class="architecture-note" id="architecture-note">
+                  Trustpoint operates inside the selected deployment level. An upstream authority or central PKI is optional.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section id="integration-levels" class="use-cases-section">
+            <div class="section-label compact-label">
+              <span class="square"></span>
+              INTEGRATION LEVELS
+            </div>
+
+            <h2>From embedded product to operational infrastructure.</h2>
+
+            <div class="level-grid">
+              <article class="level-card">
+                <span>01</span>
+                <h3>OEM / White Label</h3>
+                <p>
+                  Trustpoint becomes part of another vendor's product, appliance
+                  or platform and provides machine-identity capabilities as an
+                  embedded technology component.
+                </p>
+              </article>
+
+              <article class="level-card">
+                <span>02</span>
+                <h3>Domain Integration</h3>
+                <p>
+                  Trustpoint is deployed inside a defined operational domain such
+                  as a machine, robot, production cell, building, substation or
+                  vehicle. That domain remains part of the customer's larger
+                  operator environment.
+                </p>
+              </article>
+
+              <article class="level-card">
+                <span>03</span>
+                <h3>Operator Integration</h3>
+                <p>
+                  Trustpoint is deployed at operator level and coordinates identity
+                  and certificate lifecycle processes across multiple operational
+                  domains. An upstream authority or central PKI can be connected
+                  where required.
+                </p>
+              </article>
+            </div>
+          </section>
+
+          <section id="verticals" class="use-cases-section">
+            <div class="section-label compact-label">
+              <span class="square"></span>
+              VERTICALS
+            </div>
+
+            <h2>Different environments. The same identity challenge.</h2>
+
+            <div class="vertical-grid">
+              <article class="vertical-card">
+                <span>INDUSTRIAL</span>
+                <h3>Industrial Automation</h3>
+                <p>
+                  Machines, robots, production cells and plants with heterogeneous
+                  OT assets and lifecycle-managed machine identities.
+                </p>
+              </article>
+
+              <article class="vertical-card">
+                <span>BUILDINGS</span>
+                <h3>Building Automation</h3>
+                <p>
+                  Controllers, gateways, HVAC, access and building systems requiring
+                  consistent trust across long-lived and distributed assets.
+                </p>
+              </article>
+
+              <article class="vertical-card">
+                <span>CRITICAL INFRASTRUCTURE</span>
+                <h3>Critical Infrastructure</h3>
+                <p>
+                  Distributed, segmented and security-sensitive environments where
+                  identity lifecycle, resilience and controlled trust are essential.
+                </p>
+              </article>
+
+              <article class="vertical-card">
+                <span>DEFENCE</span>
+                <h3>Defence</h3>
+                <p>
+                  Controlled and often disconnected operational environments with
+                  high requirements for trust, sovereignty and lifecycle management.
+                </p>
+              </article>
+            </div>
+          </section>
+
+          <section id="device-personalization" class="use-cases-section">
+            <div class="section-label compact-label">
+              <span class="square"></span>
+              DEVICE PERSONALIZATION
+            </div>
+
+            <h2>Establish identity before the device reaches its operational domain.</h2>
+
+            <p>
+              Device personalization is an adjacent use case for manufacturers and
+              OEMs. Trustpoint can support scenarios in which devices receive an
+              initial cryptographic identity or bootstrap credentials during
+              manufacturing or provisioning.
+            </p>
+
+            <div class="personalization-grid">
+              <div>
+                <h3>Typical scenarios</h3>
+                <ul class="arrow-list">
+                  <li>Initial device identity provisioning</li>
+                  <li>Manufacturer-issued certificates</li>
+                  <li>IDevID / DevID-related workflows</li>
+                  <li>Bootstrap credentials for later onboarding</li>
+                  <li>Ownership-related credentials</li>
+                  <li>Preparation for secure transfer into the operator domain</li>
+                </ul>
+              </div>
+
+              <div class="adjacent-callout">
+                <span>ADJACENT USE CASE</span>
+                <p>
+                  Device personalization is not currently a primary Trustpoint focus,
+                  but it is a relevant extension of the machine-identity lifecycle and
+                  an important integration point for OEM and manufacturing scenarios.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section id="capabilities" class="use-cases-section">
+            <div class="section-label compact-label">
+              <span class="square"></span>
+              COMMON CAPABILITIES
+            </div>
+
+            <h2>Technical building blocks across the use cases.</h2>
+
+            <ul class="capability-list">
+              <li>Machine and device identity lifecycle</li>
+              <li>Certificate issuance, renewal and revocation</li>
+              <li>EST / CMP enrollment</li>
+              <li>REST API integration</li>
+              <li>OPC UA / GDS</li>
+              <li>External PKI / RA integration</li>
+              <li>Brownfield onboarding</li>
+              <li>Web-UI Automation</li>
+              <li>Local, offline and air-gapped deployment</li>
+              <li>PKCS#11 / HSM integration where applicable</li>
+              <li>Audit logging and lifecycle traceability</li>
+            </ul>
+          </section>
+
+          <section id="start-project" class="use-cases-section use-cases-cta">
+            <div class="section-label compact-label">
+              <span class="square"></span>
+              START A PROJECT
+            </div>
+
+            <h2>Where should Trustpoint fit in your environment?</h2>
+
+            <p>
+              Tell us about your devices, operational domain, PKI environment and
+              integration requirements. We can help translate the use case into a
+              concrete Trustpoint architecture and implementation scope.
+            </p>
+
+            <a class="button button-primary" href="/#contact">
+              Discuss your use case
+              <span>→︎</span>
+            </a>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-inner shell">
+        <a href="/" aria-label="Trustpoint Labs">
+          <img
+            class="footer-logo"
+            src={trustpointLogo}
+            alt="Trustpoint Labs"
+            width="180"
+            height="101"
+          />
+        </a>
+
+        <div class="footer-links">
+          <a href="/">Home</a>
+          <a href="/engineering-integration">Engineering & Integration</a>
+          <a href="/support">Support</a>
+          <a href="/imprint">Imprint</a>
+          <a href="/privacy">Privacy</a>
+        </div>
+      </div>
+    </footer>
+
+    <script is:inline>
+      const verticalDescriptions = {
+        industrial: 'Machines, robots, production cells and plants with heterogeneous OT assets and lifecycle-managed machine identities.',
+        building: 'Controllers, gateways, HVAC, access and building systems requiring consistent trust across long-lived and distributed assets.',
+        critical: 'Distributed, segmented and security-sensitive environments where identity lifecycle, resilience and controlled trust are essential.',
+        defence: 'Controlled and often disconnected operational environments with high requirements for trust, sovereignty and lifecycle management.'
+      };
+
+      const scenarios = {
+        industrial: {
+          oem: {
+            kicker: 'INDUSTRIAL · OEM / WHITE LABEL',
+            title: 'Embed machine identity into an industrial product',
+            environment: 'A machine builder, automation supplier or industrial device manufacturer wants certificate lifecycle capabilities to become part of its own product or appliance.',
+            role: 'Trustpoint is embedded or white-labeled as the machine-identity component behind the vendor experience and can provide onboarding, certificate lifecycle and local trust services.',
+            assets: ['Machine controller', 'Industrial gateway', 'IPC', 'Edge appliance', 'Automation component'],
+            capabilities: ['OEM integration', 'REST API', 'EST / CMP', 'Local CA / RA', 'Custom workflows'],
+            outcome: 'Machine-identity management becomes a native capability of the industrial product instead of a separate customer integration project.',
+            operatorLabel: 'Customer / Enterprise PKI',
+            trustpointLabel: 'Embedded / White-label Trustpoint',
+            domainLabel: 'Machine / Product Platform',
+            assetsLabel: 'Controller · Gateway · IPC · Device',
+            architectureNote: 'Trustpoint is embedded inside the vendor product or appliance and can optionally connect upstream to customer PKI infrastructure.',
+            focus: 'domain',
+            cta: 'Discuss an OEM integration'
+          },
+          domain: {
+            kicker: 'INDUSTRIAL · DOMAIN INTEGRATION',
+            title: 'Machine, robot or production-cell identity management',
+            environment: 'A machine, robot, production cell or industrial edge domain contains heterogeneous devices that need consistent identities and certificate lifecycle management.',
+            role: 'Trustpoint operates close to the machine or production domain, manages certificate lifecycle locally and connects to an upstream PKI where required.',
+            assets: ['PLC', 'Robot controller', 'Industrial PC', 'Gateway', 'OPC UA server'],
+            capabilities: ['EST', 'CMP', 'OPC UA GDS', 'REST', 'Brownfield onboarding'],
+            outcome: 'Consistent certificate management across heterogeneous automation components without forcing every device to integrate directly with enterprise PKI.',
+            operatorLabel: 'Enterprise PKI / Plant PKI',
+            trustpointLabel: 'Domain Trustpoint',
+            domainLabel: 'Machine / Robot / Production Cell',
+            assetsLabel: 'PLC · Robot · IPC · Gateway · OPC UA',
+            architectureNote: 'Trustpoint operates close to the machine or production domain and can connect to an upstream PKI where required.',
+            focus: 'trustpoint',
+            cta: 'Discuss a domain integration'
+          },
+          operator: {
+            kicker: 'INDUSTRIAL · OPERATOR INTEGRATION',
+            title: 'Plant-wide machine identity infrastructure',
+            environment: 'An industrial operator needs a consistent certificate and trust model across multiple production areas, machines and segmented OT networks.',
+            role: 'Trustpoint acts as the OT-facing identity and lifecycle layer and connects multiple operational domains with central PKI and governance processes.',
+            assets: ['Production lines', 'Machines', 'OT edge systems', 'Gateways', 'Industrial applications'],
+            capabilities: ['External PKI / RA', 'Multi-domain lifecycle', 'REST', 'Audit logging', 'Offline operation'],
+            outcome: 'Operators gain consistent machine-identity lifecycle management across production environments while keeping PKI integration close to OT.',
+            operatorLabel: 'Enterprise PKI / Central Security',
+            trustpointLabel: 'Operator Trustpoint Layer',
+            domainLabel: 'Factories / Production Domains',
+            assetsLabel: 'Machines · Cells · Gateways · OT Apps',
+            architectureNote: 'Trustpoint bridges centralized PKI and governance with multiple operational production domains.',
+            focus: 'operator',
+            cta: 'Discuss an operator deployment'
+          }
+        },
+        building: {
+          oem: {
+            kicker: 'BUILDING AUTOMATION · OEM / WHITE LABEL',
+            title: 'Embed identity management into building controllers and gateways',
+            environment: 'A building-automation vendor wants secure identity and certificate lifecycle capabilities built into controllers, gateways or management appliances.',
+            role: 'Trustpoint is embedded as the identity component behind the vendor product and can automate certificate provisioning and renewal for connected building devices.',
+            assets: ['Building gateway', 'Automation controller', 'Edge appliance', 'Access controller', 'Management platform'],
+            capabilities: ['OEM integration', 'REST API', 'EST / CMP', 'Local deployment', 'Custom workflows'],
+            outcome: 'Certificate lifecycle becomes part of the building product rather than an external operational burden for customers.',
+            operatorLabel: 'Building Operator PKI',
+            trustpointLabel: 'Embedded / White-label Trustpoint',
+            domainLabel: 'Controller / Gateway / BMS Product',
+            assetsLabel: 'HVAC · Access · Sensors · Controllers',
+            architectureNote: 'Trustpoint is packaged inside the building-automation product and can connect to an operator PKI when deployed.',
+            focus: 'domain',
+            cta: 'Discuss an OEM integration'
+          },
+          domain: {
+            kicker: 'BUILDING AUTOMATION · DOMAIN INTEGRATION',
+            title: 'Identity management for a building or technical domain',
+            environment: 'A building contains HVAC, access-control, gateway and automation systems that need consistent trust within a long-lived operational domain.',
+            role: 'Trustpoint manages certificate lifecycle for the building domain and provides a local trust layer close to controllers, gateways and management systems.',
+            assets: ['HVAC controller', 'Building gateway', 'Access system', 'BMS server', 'Edge controller'],
+            capabilities: ['Certificate lifecycle', 'EST / CMP', 'REST', 'Local CA / RA', 'Offline operation'],
+            outcome: 'Long-lived building systems can use consistent identities without depending on manual certificate handling across each subsystem.',
+            operatorLabel: 'Campus / Enterprise PKI',
+            trustpointLabel: 'Building-domain Trustpoint',
+            domainLabel: 'Building / Floor / Technical Domain',
+            assetsLabel: 'HVAC · Access · Gateways · BMS',
+            architectureNote: 'Trustpoint provides a local identity layer inside the building domain and can synchronize trust with an upstream PKI.',
+            focus: 'trustpoint',
+            cta: 'Discuss a domain integration'
+          },
+          operator: {
+            kicker: 'BUILDING AUTOMATION · OPERATOR INTEGRATION',
+            title: 'Certificate lifecycle across a building portfolio',
+            environment: 'A campus or facility operator manages multiple buildings and needs common identity and certificate policies across distributed automation domains.',
+            role: 'Trustpoint connects building-level domains to centralized PKI and operational governance while allowing local lifecycle processes where needed.',
+            assets: ['Buildings', 'BMS platforms', 'Gateways', 'Controllers', 'Facility applications'],
+            capabilities: ['External PKI / RA', 'Multi-domain lifecycle', 'REST', 'Audit logging', 'Segmented deployment'],
+            outcome: 'The operator gains a consistent trust model across multiple buildings without centralizing every operational interaction.',
+            operatorLabel: 'Enterprise / Facility PKI',
+            trustpointLabel: 'Operator Trustpoint Layer',
+            domainLabel: 'Buildings / Building Domains',
+            assetsLabel: 'BMS · HVAC · Access · Gateways',
+            architectureNote: 'Trustpoint links multiple building domains with centralized operator PKI and governance.',
+            focus: 'operator',
+            cta: 'Discuss an operator deployment'
+          }
+        },
+        critical: {
+          oem: {
+            kicker: 'CRITICAL INFRASTRUCTURE · OEM / WHITE LABEL',
+            title: 'Embed trusted identities into field and edge products',
+            environment: 'A supplier of field devices, gateways or operational edge platforms wants device identity and lifecycle services built into its product.',
+            role: 'Trustpoint provides an embedded identity layer for secure provisioning, certificate lifecycle and controlled trust inside the vendor solution.',
+            assets: ['Field gateway', 'Protection device', 'Remote terminal', 'Edge appliance', 'Operational controller'],
+            capabilities: ['OEM integration', 'Device onboarding', 'EST / CMP', 'PKCS#11 / HSM', 'Offline operation'],
+            outcome: 'Identity lifecycle can be delivered as part of the infrastructure product while preserving local operation and customer sovereignty.',
+            operatorLabel: 'Utility / Operator PKI',
+            trustpointLabel: 'Embedded / White-label Trustpoint',
+            domainLabel: 'Field / Edge Product',
+            assetsLabel: 'RTU · Gateway · Controller · Field Device',
+            architectureNote: 'Trustpoint is embedded in the field or edge product and can operate in segmented environments with optional upstream PKI connectivity.',
+            focus: 'domain',
+            cta: 'Discuss an OEM integration'
+          },
+          domain: {
+            kicker: 'CRITICAL INFRASTRUCTURE · DOMAIN INTEGRATION',
+            title: 'Local identity lifecycle for a site, station or process domain',
+            environment: 'A substation, utility site or process unit contains distributed operational assets that must remain manageable under segmentation and limited connectivity.',
+            role: 'Trustpoint provides local identity lifecycle and trust services inside the operational domain while preserving an optional connection to central PKI.',
+            assets: ['Substation gateway', 'RTU', 'Protection relay', 'Industrial controller', 'Edge system'],
+            capabilities: ['Local CA / RA', 'EST / CMP', 'Offline operation', 'Audit logging', 'External PKI integration'],
+            outcome: 'Certificate lifecycle remains operational and auditable even when the local domain is isolated or only intermittently connected.',
+            operatorLabel: 'Utility / Enterprise PKI',
+            trustpointLabel: 'Site / Station Trustpoint',
+            domainLabel: 'Substation / Site / Process Unit',
+            assetsLabel: 'RTU · Relay · Controller · Gateway',
+            architectureNote: 'Trustpoint stays close to the operational site so identity lifecycle can continue under segmentation or restricted connectivity.',
+            focus: 'trustpoint',
+            cta: 'Discuss a domain integration'
+          },
+          operator: {
+            kicker: 'CRITICAL INFRASTRUCTURE · OPERATOR INTEGRATION',
+            title: 'Identity governance across distributed operational sites',
+            environment: 'An operator manages geographically distributed sites and needs consistent machine-identity policies without requiring every field asset to connect centrally.',
+            role: 'Trustpoint acts as the operational identity layer across sites and connects local lifecycle processes with centralized PKI, policy and audit requirements.',
+            assets: ['Substations', 'Utility sites', 'Edge clusters', 'Field networks', 'Operational applications'],
+            capabilities: ['Multi-site lifecycle', 'External PKI / RA', 'Audit logging', 'Segmented deployment', 'Local operation'],
+            outcome: 'Central trust policy and local operational resilience can coexist across distributed critical infrastructure.',
+            operatorLabel: 'Central PKI / Security Operations',
+            trustpointLabel: 'Operator Trustpoint Layer',
+            domainLabel: 'Distributed Sites / Stations',
+            assetsLabel: 'Field Networks · RTUs · Gateways · Apps',
+            architectureNote: 'Trustpoint connects distributed operational domains to centralized identity governance without removing local autonomy.',
+            focus: 'operator',
+            cta: 'Discuss an operator deployment'
+          }
+        },
+        defence: {
+          oem: {
+            kicker: 'DEFENCE · OEM / WHITE LABEL',
+            title: 'Embed sovereign identity services into a platform or product',
+            environment: 'A defence supplier wants local machine-identity and certificate lifecycle capabilities integrated directly into a platform, subsystem or appliance.',
+            role: 'Trustpoint is embedded as a locally controlled identity component that can operate independently of permanent external connectivity.',
+            assets: ['Vehicle subsystem', 'Mission appliance', 'Edge platform', 'Gateway', 'Embedded controller'],
+            capabilities: ['OEM integration', 'Offline operation', 'Local CA / RA', 'PKCS#11 / HSM', 'Custom workflows'],
+            outcome: 'Identity services become an integral, locally controlled capability of the platform rather than an external dependency.',
+            operatorLabel: 'Authority / Central PKI',
+            trustpointLabel: 'Embedded / White-label Trustpoint',
+            domainLabel: 'Platform / Product / Subsystem',
+            assetsLabel: 'Controllers · Gateways · Edge Nodes · Apps',
+            architectureNote: 'Trustpoint is embedded inside the platform and can continue to operate in disconnected or restricted environments.',
+            focus: 'domain',
+            cta: 'Discuss an OEM integration'
+          },
+          domain: {
+            kicker: 'DEFENCE · DOMAIN INTEGRATION',
+            title: 'Identity lifecycle inside a vehicle, platform or mission domain',
+            environment: 'A vehicle, platform or mission system contains multiple digital assets that require controlled trust while operating with restricted connectivity.',
+            role: 'Trustpoint provides a local trust and certificate lifecycle layer inside the operational domain and can synchronize with upstream authority when connectivity is available.',
+            assets: ['Vehicle controller', 'Mission computer', 'Gateway', 'Sensor platform', 'Edge node'],
+            capabilities: ['Local CA / RA', 'Offline operation', 'Certificate lifecycle', 'PKCS#11 / HSM', 'Audit logging'],
+            outcome: 'The operational domain retains local control of identity lifecycle even during disconnected operation.',
+            operatorLabel: 'Authority / Central PKI',
+            trustpointLabel: 'Platform-domain Trustpoint',
+            domainLabel: 'Vehicle / Platform / Mission System',
+            assetsLabel: 'Controllers · Sensors · Gateways · Edge Nodes',
+            architectureNote: 'Trustpoint stays inside the operational platform and can exchange trust with higher-level infrastructure when available.',
+            focus: 'trustpoint',
+            cta: 'Discuss a domain integration'
+          },
+          operator: {
+            kicker: 'DEFENCE · OPERATOR INTEGRATION',
+            title: 'Controlled identity infrastructure across operational domains',
+            environment: 'An operator needs consistent trust and certificate lifecycle across multiple controlled, segmented or disconnected operational domains.',
+            role: 'Trustpoint provides the operational identity layer between centralized authority and distributed platforms while preserving local operation and sovereignty.',
+            assets: ['Platforms', 'Vehicles', 'Mission systems', 'Operational sites', 'Edge environments'],
+            capabilities: ['Multi-domain lifecycle', 'External PKI / RA', 'Offline operation', 'Audit logging', 'Sovereign deployment'],
+            outcome: 'Central identity governance can be extended into disconnected operational domains without creating a permanent central dependency.',
+            operatorLabel: 'Central Authority / PKI',
+            trustpointLabel: 'Operator Trustpoint Layer',
+            domainLabel: 'Platforms / Operational Domains',
+            assetsLabel: 'Vehicles · Mission Systems · Edge · Sites',
+            architectureNote: 'Trustpoint links central authority with multiple operational domains while preserving local control and disconnected operation.',
+            focus: 'operator',
+            cta: 'Discuss an operator deployment'
+          }
+        }
+      };
+
+      let selectedVertical = 'industrial';
+      let selectedLevel = 'domain';
+
+      const renderTags = (container, values) => {
+        container.innerHTML = '';
+        values.forEach((value) => {
+          const tag = document.createElement('span');
+          tag.className = 'scenario-tag';
+          tag.textContent = value;
+          container.appendChild(tag);
+        });
+      };
+
+      const topologyLabels = {
+        industrial: {
+          environment: 'Plant / Production Environment',
+          domain: 'Machine / Robot / Production Cell',
+          otherDomains: ['Machine 02', 'Production Cell 03', 'Line 04'],
+          operatorDomains: [
+            { name: 'Machine Domains', assets: ['PLC', 'Robot controller'] },
+            { name: 'Production Cells', assets: ['IPC', 'Gateway'] },
+            { name: 'OT Edge', assets: ['OPC UA', 'Edge system'] }
+          ]
+        },
+        building: {
+          environment: 'Building / Campus Environment',
+          domain: 'Building Control Domain',
+          otherDomains: ['Building 02', 'HVAC Domain', 'Access Domain'],
+          operatorDomains: [
+            { name: 'Building A', assets: ['BMS', 'HVAC'] },
+            { name: 'Building B', assets: ['Access', 'Gateway'] },
+            { name: 'Campus Services', assets: ['Edge', 'Controllers'] }
+          ]
+        },
+        critical: {
+          environment: 'Utility / Critical Infrastructure Environment',
+          domain: 'Substation / Field Site Domain',
+          otherDomains: ['Substation 02', 'Field Site 03', 'Edge Site 04'],
+          operatorDomains: [
+            { name: 'Substation Domains', assets: ['Relay', 'RTU'] },
+            { name: 'Field Sites', assets: ['Controller', 'Gateway'] },
+            { name: 'Edge Sites', assets: ['Edge system', 'Sensors'] }
+          ]
+        },
+        defence: {
+          environment: 'Customer / Operator Environment',
+          domain: 'Vehicle / Platform / Mission Domain',
+          otherDomains: ['Vehicle 02', 'Mission System 03', 'Operational Site 04'],
+          operatorDomains: [
+            { name: 'Vehicle Domains', assets: ['Controller', 'Gateway'] },
+            { name: 'Mission Systems', assets: ['Mission computer', 'Sensors'] },
+            { name: 'Operational Sites', assets: ['Edge node', 'Platform'] }
+          ]
+        }
+      };
+
+      const assetIcon = (asset) => {
+        const name = asset.toLowerCase();
+        const attrs = 'viewBox="0 0 24 24" role="presentation" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"';
+        if (name.includes('gateway') || name.includes('router')) {
+          return `<svg ${attrs}><rect x="4" y="7" width="16" height="10" rx="2"/><path d="M8 12h.01M12 12h.01M16 12h.01M8 17v3M16 17v3"/></svg>`;
+        }
+        if (name.includes('sensor')) {
+          return `<svg ${attrs}><circle cx="12" cy="12" r="3"/><path d="M7.8 7.8a6 6 0 0 0 0 8.4M16.2 7.8a6 6 0 0 1 0 8.4M5 5a10 10 0 0 0 0 14M19 5a10 10 0 0 1 0 14"/></svg>`;
+        }
+        if (name.includes('vehicle') || name.includes('platform')) {
+          return `<svg ${attrs}><path d="M5 15h14l-1.5-5h-11L5 15Z"/><path d="M7 15v2M17 15v2M8 10l1-3h6l1 3"/><circle cx="8" cy="17" r="1.5"/><circle cx="16" cy="17" r="1.5"/></svg>`;
+        }
+        if (name.includes('controller') || name.includes('plc') || name.includes('rtu') || name.includes('relay')) {
+          return `<svg ${attrs}><rect x="5" y="4" width="14" height="16" rx="2"/><path d="M8 8h8M8 12h4M8 16h2M15 15v2M18 15v2"/></svg>`;
+        }
+        if (name.includes('computer') || name.includes('ipc') || name.includes('server') || name.includes('edge')) {
+          return `<svg ${attrs}><rect x="4" y="5" width="16" height="11" rx="2"/><path d="M9 20h6M12 16v4"/></svg>`;
+        }
+        if (name.includes('building') || name.includes('site') || name.includes('station') || name.includes('factory')) {
+          return `<svg ${attrs}><path d="M4 20V8l8-4 8 4v12M8 12h2M14 12h2M8 16h2M14 16h2"/></svg>`;
+        }
+        return `<svg ${attrs}><rect x="5" y="5" width="14" height="14" rx="3"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg>`;
+      };
+
+      const assetTile = (asset, compact = false) => {
+        if (compact) {
+          return `
+            <div class="topology-asset is-compact is-text-only">
+              <strong>${asset}</strong>
+            </div>`;
+        }
+
+        return `
+          <div class="topology-asset">
+            <span class="asset-icon" aria-hidden="true">${assetIcon(asset)}</span>
+            <strong>${asset}</strong>
+          </div>`;
+      };
+
+      const trustpointCard = (label, logoUrl, modifier = '') => {
+        const showLogo = !modifier.includes('is-operator');
+        return `
+        <div class="trustpoint-instance ${modifier}">
+          ${showLogo ? `<div class="trustpoint-logo-wrap">
+            <img src="${logoUrl}" alt="Trustpoint" class="trustpoint-instance-logo" />
+          </div>` : ''}
+          <div class="trustpoint-instance-copy">
+            <span>TRUSTPOINT INSTANCE</span>
+            <strong>${label}</strong>
+            <small>Machine identity & certificate lifecycle</small>
+          </div>
+        </div>`;
+      };
+
+      const renderTopology = (scenario) => {
+        const body = document.getElementById('topology-body');
+        const labels = topologyLabels[selectedVertical];
+        const logoUrl = body.dataset.trustpointLogo;
+
+        if (selectedLevel === 'oem') {
+          body.innerHTML = `
+            <div class="customer-environment is-oem">
+              <div class="environment-header">
+                <div><span>CUSTOMER / OPERATOR ENVIRONMENT</span><strong>${labels.environment}</strong></div>
+                <span class="environment-status">DEPLOYMENT TARGET</span>
+              </div>
+              <div class="oem-product-zone">
+                <div class="nested-zone-header"><span>OEM PRODUCT / APPLIANCE</span><strong>${scenario.domainLabel}</strong></div>
+                ${trustpointCard(scenario.trustpointLabel, logoUrl, 'is-embedded')}
+                <div class="asset-section">
+                  <div class="asset-heading-row"><span class="asset-heading">PRODUCT COMPONENTS / ASSETS</span><span class="asset-count">${scenario.assets.length} ASSETS</span></div>
+                  <div class="asset-grid">${scenario.assets.map((asset) => assetTile(asset)).join('')}</div>
+                </div>
+              </div>
+              <div class="deployment-context"><span>→</span> Product is deployed into the customer's operational environment.</div>
+            </div>`;
+          return;
+        }
+
+        if (selectedLevel === 'domain') {
+          body.innerHTML = `
+            <div class="customer-environment">
+              <div class="environment-header">
+                <div><span>CUSTOMER / OPERATOR ENVIRONMENT</span><strong>${labels.environment}</strong></div>
+                <span class="environment-status">HIGHER-LEVEL DOMAIN</span>
+              </div>
+              <div class="operational-domain-zone">
+                <div class="nested-zone-header"><span>OPERATIONAL DOMAIN</span><strong>${scenario.domainLabel || labels.domain}</strong></div>
+                ${trustpointCard(scenario.trustpointLabel, logoUrl)}
+                <div class="domain-connector" aria-hidden="true"><span></span></div>
+                <div class="asset-section">
+                  <div class="asset-heading-row"><span class="asset-heading">DEVICES / ASSETS</span><span class="asset-count">${scenario.assets.length} ASSETS</span></div>
+                  <div class="asset-grid">${scenario.assets.map((asset) => assetTile(asset)).join('')}</div>
+                </div>
+              </div>
+              <div class="other-domains">
+                <span>OTHER OPERATIONAL DOMAINS IN THE SAME CUSTOMER ENVIRONMENT</span>
+                <div>${labels.otherDomains.map((name) => `<span class="ghost-domain">${name}</span>`).join('')}</div>
+              </div>
+            </div>`;
+          return;
+        }
+
+        body.innerHTML = `
+          <div class="customer-environment is-operator">
+            <div class="environment-header">
+              <div><span>CUSTOMER / OPERATOR ENVIRONMENT</span><strong>${labels.environment}</strong></div>
+              <span class="environment-status">OPERATOR LEVEL</span>
+            </div>
+            <div class="operator-trustpoint-stage">
+              ${trustpointCard(scenario.trustpointLabel, logoUrl, 'is-operator')}
+            </div>
+            <div class="operator-bus" aria-hidden="true"><span></span><i></i></div>
+            <div class="operator-domains">
+              ${labels.operatorDomains.map((domain) => `
+                <div class="mini-domain">
+                  <div class="mini-domain-title"><span>OPERATIONAL DOMAIN</span><strong>${domain.name}</strong></div>
+                  <div class="mini-domain-assets">${domain.assets.map((asset) => assetTile(asset, true)).join('')}</div>
+                </div>`).join('')}
+            </div>
+          </div>`;
+      };
+
+      const updateScenario = () => {
+        const scenario = scenarios[selectedVertical][selectedLevel];
+        document.getElementById('vertical-description').textContent = verticalDescriptions[selectedVertical];
+        document.getElementById('scenario-kicker').textContent = scenario.kicker;
+        document.getElementById('scenario-title').textContent = scenario.title;
+        document.getElementById('scenario-environment').textContent = scenario.environment;
+        document.getElementById('scenario-role').textContent = scenario.role;
+        renderTags(document.getElementById('scenario-assets'), scenario.assets);
+        renderTags(document.getElementById('scenario-capabilities'), scenario.capabilities);
+        document.getElementById('scenario-outcome').textContent = scenario.outcome;
+        document.getElementById('scenario-cta').childNodes[0].textContent = scenario.cta + ' ';
+        document.getElementById('arch-operator-label').textContent = scenario.operatorLabel;
+        document.getElementById('architecture-note').textContent = `${scenario.architectureNote} The upstream authority / central PKI is optional.`;
+        renderTopology(scenario);
+      };
+
+      document.querySelectorAll('.vertical-button').forEach((button) => {
+        button.addEventListener('click', () => {
+          selectedVertical = button.dataset.vertical;
+          document.querySelectorAll('.vertical-button').forEach((item) => item.classList.remove('is-selected'));
+          button.classList.add('is-selected');
+          updateScenario();
+        });
+      });
+
+      document.querySelectorAll('.level-button').forEach((button) => {
+        button.addEventListener('click', () => {
+          selectedLevel = button.dataset.level;
+          document.querySelectorAll('.level-button').forEach((item) => item.classList.remove('is-selected'));
+          button.classList.add('is-selected');
+          updateScenario();
+        });
+      });
+
+      updateScenario();
+
+      const sidebarLinks = Array.from(document.querySelectorAll('.use-cases-sidebar-link'));
+      const sections = sidebarLinks
+        .map((link) => document.querySelector(link.getAttribute('href')))
+        .filter(Boolean);
+
+      const setActiveLink = (id) => {
+        sidebarLinks.forEach((link) => {
+          link.classList.toggle('is-active', link.getAttribute('href') === `#${id}`);
+        });
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        const visible = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+        if (visible.length) setActiveLink(visible[0].target.id);
+      }, {
+        rootMargin: '-18% 0px -62% 0px',
+        threshold: [0.05, 0.2, 0.5]
+      });
+
+      sections.forEach((section) => observer.observe(section));
+    </script>
+
+    <style is:inline>
+      .use-cases-hero {
+        padding-block: 88px 82px;
+        border-top: 1px solid var(--line);
+      }
+
+      .use-cases-hero-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
+        gap: clamp(56px, 8vw, 124px);
+        align-items: end;
+      }
+
+      .use-cases-hero h1 {
+        max-width: 900px;
+        margin: 0;
+        font-size: clamp(52px, 6.2vw, 88px);
+        line-height: 0.98;
+      }
+
+      .use-cases-lede {
+        margin: 0;
+        color: var(--muted);
+        font-size: 20px;
+        line-height: 1.6;
+      }
+
+      .use-cases-note {
+        margin: 24px 0 0;
+        color: var(--muted);
+        font-size: 15px;
+        line-height: 1.6;
+      }
+
+      .use-cases-layout {
+        display: grid;
+        grid-template-columns: 250px minmax(0, 1fr);
+        gap: clamp(48px, 7vw, 104px);
+        border-top: 1px solid var(--line);
+      }
+
+      .use-cases-sidebar {
+        position: relative;
+        padding-top: 58px;
+      }
+
+      .use-cases-sidebar nav {
+        position: sticky;
+        top: 28px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+      }
+
+      .use-cases-sidebar-link {
+        display: block;
+        padding: 11px 0 11px 16px;
+        border-left: 2px solid var(--line);
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.35;
+      }
+
+      .use-cases-sidebar-link:hover,
+      .use-cases-sidebar-link:focus-visible,
+      .use-cases-sidebar-link.is-active {
+        color: var(--trustpoint-blue);
+        border-left-color: var(--trustpoint-blue);
+      }
+
+      .use-cases-sidebar-link.is-active {
+        font-weight: 600;
+      }
+
+      .use-cases-content {
+        min-width: 0;
+      }
+
+      .use-cases-section {
+        padding-block: 88px;
+        border-bottom: 1px solid var(--line);
+        scroll-margin-top: 36px;
+      }
+
+      .compact-label {
+        margin-bottom: 26px;
+      }
+
+      .use-cases-section h2 {
+        max-width: 900px;
+        margin: 0;
+        font-size: clamp(38px, 4.7vw, 62px);
+        line-height: 1.02;
+      }
+
+      .use-cases-section > p {
+        max-width: 820px;
+        margin: 26px 0 0;
+        color: var(--muted);
+        font-size: 18px;
+        line-height: 1.65;
+      }
+
+      .selector-block {
+        margin-top: 42px;
+      }
+
+      .selector-heading {
+        display: grid;
+        grid-template-columns: 42px minmax(0, 1fr);
+        gap: 16px;
+        margin-bottom: 18px;
+      }
+
+      .selector-heading > span {
+        color: var(--trustpoint-blue);
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      .selector-heading strong {
+        display: block;
+        font-size: 18px;
+      }
+
+      .selector-heading small {
+        display: block;
+        max-width: 760px;
+        margin-top: 5px;
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      .selector-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .selector-button {
+        appearance: none;
+        min-height: 46px;
+        padding: 10px 15px;
+        border: 1px solid var(--line);
+        background: var(--white);
+        color: var(--black);
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 600;
+        transition: border-color 140ms ease, color 140ms ease, background 140ms ease;
+      }
+
+      .selector-button:hover,
+      .selector-button:focus-visible,
+      .selector-button.is-selected {
+        border-color: var(--trustpoint-blue);
+        color: var(--trustpoint-blue);
+      }
+
+      .selector-button.is-selected {
+        background: #f3f7fc;
+      }
+
+      .scenario-panel {
+        display: grid;
+        grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
+        gap: 0;
+        margin-top: 52px;
+        border: 1px solid var(--line);
+        border-top: 3px solid var(--trustpoint-blue);
+      }
+
+      .scenario-copy {
+        padding: 34px;
+      }
+
+      .scenario-kicker,
+      .architecture-label {
+        color: var(--trustpoint-blue);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.07em;
+      }
+
+      .scenario-copy h3 {
+        max-width: 700px;
+        margin: 16px 0 0;
+        font-size: clamp(28px, 3vw, 42px);
+        line-height: 1.08;
+        letter-spacing: -0.035em;
+      }
+
+      .scenario-detail,
+      .scenario-outcome {
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 1px solid var(--line);
+      }
+
+      .scenario-detail > span,
+      .scenario-outcome > span {
+        display: block;
+        margin-bottom: 8px;
+        color: var(--trustpoint-blue);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      .scenario-detail p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 16px;
+        line-height: 1.65;
+      }
+
+      .tag-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .scenario-tag {
+        display: inline-flex;
+        padding: 7px 10px;
+        border: 1px solid var(--line);
+        background: #f7f7f7;
+        font-size: 13px;
+        line-height: 1.2;
+      }
+
+      .scenario-outcome strong {
+        display: block;
+        max-width: 720px;
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+      .scenario-cta {
+        margin-top: 30px;
+      }
+
+      .architecture-panel {
+        padding: 34px;
+        border-left: 1px solid var(--line);
+        background:
+          radial-gradient(circle at 82% 8%, rgba(0, 74, 173, 0.07), transparent 28%),
+          #f7f9fc;
+      }
+      .deployment-topology {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 28px;
+      }
+
+      .optional-pki {
+        position: relative;
+        width: min(360px, 92%);
+        padding: 15px 18px;
+        border: 1px dashed #a7b8cc;
+        border-radius: 14px;
+        background: rgba(255, 255, 255, 0.76);
+        box-shadow: 0 7px 20px rgba(31, 55, 86, 0.035);
+      }
+
+      .optional-pki-heading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+      }
+
+      .optional-pki-icon {
+        display: grid;
+        width: 34px;
+        height: 34px;
+        place-items: center;
+        border: 1px solid rgba(0, 74, 173, 0.1);
+        border-radius: 10px;
+        background: rgba(0, 74, 173, 0.05);
+        color: var(--trustpoint-blue);
+      }
+
+      .optional-pki-icon svg {
+        width: 19px;
+        height: 19px;
+        fill: none !important;
+        stroke: currentColor !important;
+        stroke-width: 1.7;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .optional-pki small {
+        display: block;
+        margin-top: 4px;
+        color: var(--muted);
+        font-size: 9px;
+        font-weight: 700;
+        letter-spacing: 0.09em;
+      }
+
+      .optional-pki > strong {
+        display: block;
+        margin-top: 9px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.35;
+      }
+
+      .optional-badge {
+        display: inline-flex;
+        padding: 3px 7px;
+        border: 1px solid #a7b8cc;
+        border-radius: 999px;
+        color: var(--trustpoint-blue);
+        background: var(--white);
+        font-size: 8px;
+        font-weight: 700;
+        letter-spacing: 0.09em;
+      }
+
+      .optional-connector {
+        position: relative;
+        width: 70px;
+        height: 42px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .optional-connector span {
+        display: block;
+        height: 100%;
+        border-left: 2px dashed #a7b8cc;
+      }
+
+      .optional-connector i {
+        position: absolute;
+        bottom: 1px;
+        width: 8px;
+        height: 8px;
+        border-right: 2px solid #a7b8cc;
+        border-bottom: 2px solid #a7b8cc;
+        transform: rotate(45deg) translateY(-2px);
+      }
+
+      .topology-body {
+        width: 100%;
+      }
+
+      .customer-environment {
+        position: relative;
+        width: 100%;
+        padding: 24px;
+        border: 1.5px solid rgba(0, 74, 173, 0.32);
+        border-radius: 26px;
+        background:
+          linear-gradient(180deg, rgba(0, 74, 173, 0.035), rgba(255,255,255,.96) 28%),
+          #fff;
+        box-shadow: 0 18px 46px rgba(31, 55, 86, 0.055);
+      }
+
+      .customer-environment::before {
+        content: "";
+        position: absolute;
+        inset: 8px;
+        border: 1px solid rgba(0, 74, 173, 0.06);
+        border-radius: 19px;
+        pointer-events: none;
+      }
+
+      .environment-header,
+      .nested-zone-header {
+        position: relative;
+        z-index: 1;
+      }
+
+      .environment-header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 16px;
+        padding-bottom: 19px;
+        border-bottom: 1px solid rgba(0, 74, 173, 0.11);
+      }
+
+      .environment-header span,
+      .nested-zone-header span,
+      .mini-domain-title span,
+      .asset-heading,
+      .trustpoint-instance-copy > span,
+      .other-domains > span {
+        display: block;
+        color: var(--trustpoint-blue);
+        font-size: 9px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+      }
+
+      .environment-header strong {
+        display: block;
+        margin-top: 5px;
+        font-size: 17px;
+        line-height: 1.3;
+      }
+
+      .environment-status {
+        display: inline-flex !important;
+        flex: 0 0 auto;
+        padding: 6px 8px;
+        border-radius: 999px;
+        background: rgba(0, 74, 173, 0.07);
+        font-size: 8px !important;
+      }
+
+      .operational-domain-zone,
+      .oem-product-zone {
+        position: relative;
+        z-index: 1;
+        margin-top: 22px;
+        padding: 20px;
+        border: 1.5px solid rgba(0, 74, 173, 0.58);
+        border-radius: 20px;
+        background: rgba(247, 250, 255, 0.82);
+      }
+
+      .oem-product-zone {
+        border-style: solid;
+        background: linear-gradient(145deg, rgba(0,74,173,.045), rgba(255,255,255,.98));
+      }
+
+      .nested-zone-header {
+        padding-bottom: 16px;
+        border-bottom: 1px solid rgba(0, 74, 173, 0.1);
+      }
+
+      .nested-zone-header strong {
+        display: block;
+        margin-top: 5px;
+        font-size: 16px;
+      }
+
+      .trustpoint-instance {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        width: min(430px, 96%);
+        margin: 24px auto 0;
+        padding: 21px 23px;
+        border: 2px solid var(--trustpoint-blue);
+        border-radius: 17px;
+        background: var(--white);
+        box-shadow: 0 16px 38px rgba(0, 74, 173, 0.11);
+      }
+
+      .trustpoint-instance.is-operator {
+        margin-top: 0;
+        min-height: 0;
+        width: min(360px, 100%);
+      }
+
+      .trustpoint-logo-wrap {
+        display: grid;
+        width: 152px;
+        min-width: 152px;
+        max-width: 100%;
+        height: 82px;
+        place-items: center;
+        padding: 8px 12px;
+        border: 1px solid rgba(0, 74, 173, 0.08);
+        border-radius: 13px;
+        background: rgba(0, 74, 173, 0.04);
+      }
+
+      .trustpoint-instance-logo {
+        width: 124px;
+        max-height: 64px;
+        object-fit: contain;
+      }
+
+      .trustpoint-instance-copy {
+        width: 100%;
+      }
+
+      .trustpoint-instance-copy strong {
+        display: block;
+        margin-top: 5px;
+        font-size: 17px;
+        line-height: 1.24;
+      }
+
+      .trustpoint-instance-copy small {
+        display: block;
+        margin-top: 7px;
+        color: var(--muted);
+        font-size: 10px;
+        line-height: 1.4;
+      }
+
+      .domain-connector {
+        position: relative;
+        width: 75%;
+        height: 34px;
+        margin: 0 auto;
+      }
+
+      .domain-connector::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 0;
+        height: 20px;
+        border-left: 1.5px solid rgba(0, 74, 173, 0.5);
+      }
+
+      .domain-connector span {
+        position: absolute;
+        left: 8%;
+        right: 8%;
+        bottom: 12px;
+        border-top: 1.5px solid rgba(0, 74, 173, 0.18);
+      }
+
+      .asset-section {
+        position: relative;
+        z-index: 1;
+        margin-top: 3px;
+      }
+
+      .asset-heading-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 12px;
+      }
+
+      .asset-count {
+        color: var(--muted);
+        font-size: 8px;
+        font-weight: 700;
+        letter-spacing: 0.09em;
+      }
+
+      .asset-grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+      }
+
+      .topology-asset {
+        display: grid;
+        grid-template-columns: 38px minmax(0, 1fr);
+        align-items: center;
+        gap: 10px;
+        min-height: 62px;
+        padding: 10px 12px;
+        border: 1px solid rgba(0, 74, 173, 0.13);
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.96);
+        box-shadow: 0 6px 16px rgba(31, 55, 86, 0.035);
+        transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+      }
+
+      .topology-asset:hover {
+        transform: translateY(-2px);
+        border-color: rgba(0, 74, 173, 0.36);
+        box-shadow: 0 10px 22px rgba(0, 74, 173, 0.065);
+      }
+
+      .topology-asset strong {
+        font-size: 11px;
+        line-height: 1.3;
+      }
+
+      .asset-icon {
+        display: grid;
+        width: 38px;
+        height: 38px;
+        place-items: center;
+        border: 1px solid rgba(0, 74, 173, 0.12);
+        border-radius: 10px;
+        background: rgba(0, 74, 173, 0.045);
+        color: var(--trustpoint-blue);
+      }
+
+      .asset-icon svg {
+        width: 20px;
+        height: 20px;
+        fill: none !important;
+        stroke: currentColor !important;
+        stroke-width: 1.7;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .topology-asset.is-compact {
+        grid-template-columns: 28px minmax(0, 1fr);
+        min-height: 48px;
+        padding: 7px 9px;
+        box-shadow: none;
+      }
+
+      .topology-asset.is-compact .asset-icon {
+        width: 28px;
+        height: 28px;
+        border-radius: 8px;
+      }
+
+      .topology-asset.is-compact .asset-icon svg {
+        width: 16px;
+        height: 16px;
+      }
+
+      .topology-asset.is-compact strong {
+        font-size: 9px;
+      }
+
+      .other-domains {
+        position: relative;
+        z-index: 1;
+        margin-top: 20px;
+        padding-top: 16px;
+        border-top: 1px dashed rgba(0, 74, 173, 0.18);
+      }
+
+      .other-domains > div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 10px;
+      }
+
+      .ghost-domain {
+        display: inline-flex;
+        padding: 8px 10px;
+        border: 1px dashed rgba(0, 74, 173, 0.22);
+        border-radius: 10px;
+        color: var(--muted);
+        background: rgba(0, 74, 173, 0.025);
+        font-size: 9px;
+      }
+
+      .deployment-context {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 18px;
+        color: var(--muted);
+        font-size: 10px;
+        line-height: 1.4;
+      }
+
+      .deployment-context span {
+        color: var(--trustpoint-blue);
+        font-size: 16px;
+      }
+
+      .operator-trustpoint-stage {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        margin-top: 24px;
+      }
+
+      .operator-bus {
+        position: relative;
+        z-index: 1;
+        width: 82%;
+        height: 40px;
+        margin: 0 auto;
+      }
+
+      .operator-bus::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 0;
+        height: 22px;
+        border-left: 1.5px solid rgba(0, 74, 173, 0.48);
+      }
+
+      .operator-bus span {
+        position: absolute;
+        left: 7%;
+        right: 7%;
+        bottom: 10px;
+        border-top: 1.5px solid rgba(0, 74, 173, 0.22);
+      }
+
+      .operator-domains {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 9px;
+      }
+
+      .mini-domain {
+        padding: 11px;
+        border: 1.5px solid rgba(0, 74, 173, 0.32);
+        border-radius: 14px;
+        background: rgba(247, 250, 255, 0.86);
+      }
+
+      .mini-domain-title {
+        padding-bottom: 8px;
+        border-bottom: 1px solid rgba(0, 74, 173, 0.09);
+      }
+
+      .mini-domain-title strong {
+        display: block;
+        margin-top: 4px;
+        font-size: 10px;
+        line-height: 1.25;
+      }
+
+      .mini-domain-assets {
+        display: grid;
+        gap: 6px;
+        margin-top: 8px;
+      }
+
+      .topology-asset.is-compact.is-text-only {
+        min-height: 0;
+        padding: 8px 10px;
+        border: 1px solid rgba(0, 74, 173, 0.11);
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.86);
+      }
+
+      .topology-asset.is-compact.is-text-only strong {
+        font-size: 10px;
+        line-height: 1.3;
+      }
+
+      .architecture-note {
+        margin: 22px 0 0;
+        color: var(--muted);
+        font-size: 13px;
+        line-height: 1.6;
+      }
+
+      .level-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 48px;
+      }
+
+      .level-card,
+      .vertical-card {
+        min-height: 250px;
+        padding: 28px;
+        border: 1px solid var(--line);
+        border-top: 3px solid var(--trustpoint-blue);
+      }
+
+      .level-card > span,
+      .vertical-card > span,
+      .adjacent-callout > span {
+        display: block;
+        margin-bottom: 24px;
+        color: var(--trustpoint-blue);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+      }
+
+      .level-card h3,
+      .vertical-card h3,
+      .personalization-grid h3 {
+        margin: 0;
+        font-size: 24px;
+        line-height: 1.2;
+        letter-spacing: -0.025em;
+      }
+
+      .level-card p,
+      .vertical-card p {
+        margin: 14px 0 0;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      .vertical-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 48px;
+      }
+
+      .personalization-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(300px, 0.75fr);
+        gap: 44px;
+        margin-top: 46px;
+      }
+
+      .arrow-list {
+        margin: 20px 0 0;
+        padding: 0;
+        list-style: none;
+        border-top: 1px solid var(--line);
+      }
+
+      .arrow-list li {
+        position: relative;
+        padding: 13px 0 13px 24px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .arrow-list li::before {
+        content: "→︎";
+        position: absolute;
+        left: 0;
+        color: var(--trustpoint-blue);
+      }
+
+      .adjacent-callout {
+        align-self: start;
+        padding: 28px;
+        border-left: 4px solid var(--trustpoint-blue);
+        background: #f7f9fc;
+      }
+
+      .adjacent-callout p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.65;
+      }
+
+      .capability-list {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0 34px;
+        margin: 42px 0 0;
+        padding: 0;
+        list-style: none;
+        border-top: 1px solid var(--line);
+      }
+
+      .capability-list li {
+        position: relative;
+        padding: 16px 0 16px 24px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .capability-list li::before {
+        content: "→︎";
+        position: absolute;
+        left: 0;
+        color: var(--trustpoint-blue);
+      }
+
+      .use-cases-cta {
+        border-bottom: 0;
+      }
+
+      .use-cases-cta .button {
+        margin-top: 34px;
+      }
+
+      @media (max-width: 1000px) {
+        .use-cases-hero-grid,
+        .use-cases-layout,
+        .scenario-panel,
+        .personalization-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .use-cases-sidebar {
+          padding-top: 0;
+          border-top: 1px solid var(--line);
+          border-bottom: 1px solid var(--line);
+        }
+
+        .use-cases-sidebar nav {
+          position: static;
+          display: flex;
+          flex-direction: row;
+          overflow-x: auto;
+          gap: 18px;
+          padding: 14px 0;
+        }
+
+        .use-cases-sidebar-link {
+          flex: 0 0 auto;
+          padding: 0;
+          border-left: 0;
+          border-bottom: 2px solid transparent;
+        }
+
+        .use-cases-sidebar-link.is-active {
+          border-bottom-color: var(--trustpoint-blue);
+        }
+
+        .architecture-panel {
+          border-left: 0;
+          border-top: 1px solid var(--line);
+        }
+
+        .operator-domains {
+          grid-template-columns: 1fr;
+        }
+
+        .customer-environment {
+          padding: 20px;
+        }
+
+        .domain-zone {
+          padding: 22px;
+          border-radius: 22px;
+        }
+
+        .trustpoint-instance {
+          width: 100%;
+        }
+
+      }
+
+      @media (max-width: 760px) {
+        .level-grid,
+        .vertical-grid,
+        .capability-list {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .use-cases-hero {
+          padding-block: 58px 64px;
+        }
+
+        .use-cases-section {
+          padding-block: 64px;
+        }
+
+        .scenario-copy,
+        .architecture-panel {
+          padding: 24px;
+        }
+
+        .asset-grid {
+          width: 100%;
+        }
+
+        .trustpoint-instance {
+          width: 100%;
+        }
+
+        .asset-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .topology-asset:last-child:nth-child(odd) {
+          grid-column: auto;
+          width: 100%;
+        }
+
+        .environment-header {
+          flex-direction: column;
+        }
+
+        .operator-domains {
+          grid-template-columns: 1fr;
+        }
+
+        .operational-domain-zone,
+        .oem-product-zone {
+          padding: 16px;
+        }
+
+        .trustpoint-instance {
+          align-items: flex-start;
+          gap: 14px;
+          padding: 20px;
+        }
+
+        .trustpoint-logo-wrap {
+          width: 132px;
+          min-width: 132px;
+          height: 70px;
+        }
+
+        .trustpoint-instance-logo {
+          width: 110px;
+        }
+
+        .asset-flow-line {
+          left: 16%;
+          right: 16%;
+        }
+      }
+    </style>
+  </body>
+</html>

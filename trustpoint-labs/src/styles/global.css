@@ -1067,3 +1067,19 @@ footer {
     font-size: 22px;
   }
 }
+
+
+.offering-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 24px;
+  color: var(--trustpoint-blue);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.offering-link:hover,
+.offering-link:focus-visible {
+  text-decoration: underline;
+}
