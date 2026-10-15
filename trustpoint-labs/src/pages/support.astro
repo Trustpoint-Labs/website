@@ -19,11 +19,11 @@ const securityEmail = "security@trustpoint-labs.com";
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Commercial Support | Trustpoint Labs</title>
+    <title>Trustpoint Support &amp; Maintenance | Trustpoint Labs</title>
 
     <meta
       name="description"
-      content="Commercial break/fix support for official Trustpoint releases from version 1.0.0 onward, including support scope, severity levels, response targets and case handling."
+      content="Professional Trustpoint support and maintenance for industrial PKI environments. Explore break/fix coverage, supported releases, response targets and support agreements."
     />
 
     <meta name="robots" content="index, follow" />
@@ -32,17 +32,17 @@ const securityEmail = "security@trustpoint-labs.com";
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Commercial Support | Trustpoint Labs" />
+    <meta property="og:title" content="Trustpoint Support &amp; Maintenance | Trustpoint Labs" />
     <meta
       property="og:description"
-      content="Commercial technical support for Trustpoint production environments."
+      content="Professional Trustpoint support and maintenance for industrial PKI environments, with defined coverage, response targets and support agreements."
     />
     <meta property="og:url" content="https://trustpoint-labs.com/support/" />
     <meta property="og:site_name" content="Trustpoint Labs" />
     <meta property="og:image" content="https://trustpoint-labs.com/og-image.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Trustpoint Labs – Commercial Support" />
+    <meta property="og:image:alt" content="Trustpoint Labs – Trustpoint Support and Maintenance" />
 
     <style>
       .support-hero {
@@ -328,6 +328,14 @@ const securityEmail = "security@trustpoint-labs.com";
           display: none;
         }
 
+        .response-table td::before {
+          content: attr(data-label);
+          display: block;
+          font-weight: 700;
+          font-size: 12px;
+          margin-bottom: 4px;
+        }
+
         .response-table tr + tr {
           margin-top: 12px;
         }
@@ -358,12 +366,16 @@ const securityEmail = "security@trustpoint-labs.com";
           </div>
 
           <h1>
-            Professional support.<br />
+            Trustpoint support &amp; maintenance.<br />
             <span class="hero-accent">Defined expectations.</span>
           </h1>
 
           <p>
-            Trustpoint Labs provides commercial break/fix support for organizations operating Trustpoint in production and business-critical environments. Support is available under an active Trustpoint Labs support agreement.
+            Certificate issuance failures, renewal errors and interrupted PKI workflows can affect industrial operations. Trustpoint Labs provides professional break/fix support for organizations running official Trustpoint releases in production and business-critical environments, under an active support agreement.
+          </p>
+          <p>
+            Need industrial PKI architecture, integration, custom engineering or consulting instead?
+            Explore our <a href="/engineering-integration/">Engineering &amp; Integration services</a>.
           </p>
 
           <div class="at-a-glance" aria-label="Support at a glance">
@@ -374,7 +386,7 @@ const securityEmail = "security@trustpoint-labs.com";
             <article>
               <span>SUPPORT HOURS</span>
               <strong>Mon–Fri, 09:00–17:00</strong>
-              <small>Europe/Berlin, excluding German public holidays</small>
+              <small>Europe/Berlin, excluding public holidays in Baden-Württemberg, Germany</small>
             </article>
             <article>
               <span>SEVERITY 1</span>
@@ -408,6 +420,7 @@ const securityEmail = "security@trustpoint-labs.com";
             <a href="#response">Response targets</a>
             <a href="#hours">Support hours</a>
             <a href="#case">Opening a support case</a>
+            <a href="#case-lifecycle">Support case lifecycle</a>
             <a href="#responsibilities">Customer responsibilities</a>
             <a href="#security">Security vulnerabilities</a>
             <a href="#professional-services">Professional Services</a>
@@ -416,12 +429,12 @@ const securityEmail = "security@trustpoint-labs.com";
           <div class="support-content">
             <section class="support-section" id="general-information">
               <div class="section-label"><span class="square"></span>GENERAL INFORMATION</div>
-              <h2>Commercial technical support for Trustpoint.</h2>
+              <h2>Professional Trustpoint support for industrial PKI operations.</h2>
               <p>
-                Trustpoint Labs provides commercial support for organizations operating Trustpoint in production and business-critical environments. Support is available to customers with an active Trustpoint Labs support agreement and focuses on restoring documented Trustpoint functionality when technical problems occur.
+                When certificate issuance, renewal, revocation or documented Trustpoint workflows stop working as expected, technical teams need a clear route to diagnosis. Trustpoint Labs offers commercial break/fix support for customers operating official Trustpoint releases in production and business-critical environments under an active support agreement.
               </p>
               <p>
-                Commercial support follows a break/fix model. It does not include consulting, system design, integration projects, custom development, training or other professional services.
+                Commercial support follows a break/fix model. It does not include consulting, system design, integration projects, custom development, training or other professional services. These can be discussed separately through our <a href="/engineering-integration/">industrial PKI engineering and integration services</a>.
               </p>
               <div class="support-callout">
                 <p>Trustpoint Labs Support helps restore documented Trustpoint functionality.</p>
@@ -430,7 +443,7 @@ const securityEmail = "security@trustpoint-labs.com";
 
             <section class="support-section" id="scope">
               <div class="section-label"><span class="square"></span>SUPPORT SCOPE</div>
-              <h2>Focused on product operation.</h2>
+              <h2>Technical troubleshooting for documented Trustpoint functionality.</h2>
               <p>
                 Support covers technical problems affecting official Trustpoint releases where the software does not operate as documented or expected. Our support engineers assist with problem determination, troubleshooting and defect analysis related to Trustpoint itself.
               </p>
@@ -441,7 +454,7 @@ const securityEmail = "security@trustpoint-labs.com";
 
             <section class="support-section" id="supported">
               <div class="section-label"><span class="square"></span>WHAT IS SUPPORTED</div>
-              <h2>Break/fix support for documented Trustpoint functionality.</h2>
+              <h2>What Trustpoint technical support covers.</h2>
 
               <h3>Product functionality</h3>
               <p>Problems where Trustpoint does not behave according to its documentation or expected product functionality.</p>
@@ -490,7 +503,7 @@ const securityEmail = "security@trustpoint-labs.com";
 
             <section class="support-section" id="not-supported">
               <div class="section-label"><span class="square"></span>WHAT IS NOT SUPPORTED</div>
-              <h2>Support is not a substitute for engineering or consulting.</h2>
+              <h2>When professional PKI engineering is needed instead.</h2>
 
               <h3>Installation and implementation services</h3>
               <ul>
@@ -518,7 +531,7 @@ const securityEmail = "security@trustpoint-labs.com";
                 <li>Creation of customer-specific deployment workflows</li>
               </ul>
               <p>
-                Support may assist in determining whether Trustpoint itself is functioning correctly at an integration boundary.
+                Support may assist in determining whether Trustpoint itself is functioning correctly at an integration boundary. Projects to integrate Trustpoint with third-party systems can be scoped separately through our <a href="/engineering-integration/">Engineering &amp; Integration services</a>.
               </p>
 
               <h3>Third-party products and infrastructure</h3>
@@ -569,7 +582,7 @@ const securityEmail = "security@trustpoint-labs.com";
                 Development branches, unofficial builds, forks and modified Trustpoint versions are outside the standard support scope unless explicitly included in a separate agreement.
               </p>
               <p>
-                Trustpoint Labs may recommend or require an update to a newer Trustpoint release where a known issue has already been resolved or where continued diagnosis on an older release is not reasonable.
+                All official Trustpoint releases from v1.0.0 onward remain eligible for standard break/fix support. Trustpoint Labs may recommend a newer release as a fix or workaround. Support for an older release does not imply a commitment to develop or backport fixes or security patches for that release.
               </p>
             </section>
 
@@ -605,13 +618,16 @@ const securityEmail = "security@trustpoint-labs.com";
                   <p class="target">Target initial response: 2 business days</p>
                 </article>
               </div>
+              <p>
+                Customers may propose a severity level when submitting a support request. Trustpoint Labs may review and adjust the proposed severity based on the actual technical and operational impact and the definitions above. Any adjustment will be communicated to the customer. The original receipt time remains unchanged.
+              </p>
             </section>
 
             <section class="support-section" id="response">
               <div class="section-label"><span class="square"></span>RESPONSE TARGETS</div>
               <h2>Initial response, not guaranteed resolution time.</h2>
               <p>
-                Response targets refer to the time between receipt of a valid support request and the initial response from Trustpoint Labs Support.
+                Response targets are measured from the time a support request is received during support hours. Requests received outside support hours start accruing response time at the beginning of the next support period. The applicable target is determined by the assessed severity level.
               </p>
 
               <table class="response-table">
@@ -623,20 +639,23 @@ const securityEmail = "security@trustpoint-labs.com";
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Severity 1 — Critical</td>
-                    <td>4 business hours</td>
+                    <td data-label="Severity">Severity 1 — Critical</td>
+                    <td data-label="Target initial response">4 business hours</td>
                   </tr>
                   <tr>
-                    <td>Severity 2 — Major</td>
-                    <td>1 business day</td>
+                    <td data-label="Severity">Severity 2 — Major</td>
+                    <td data-label="Target initial response">1 business day</td>
                   </tr>
                   <tr>
-                    <td>Severity 3 — Standard</td>
-                    <td>2 business days</td>
+                    <td data-label="Severity">Severity 3 — Standard</td>
+                    <td data-label="Target initial response">2 business days</td>
                   </tr>
                 </tbody>
               </table>
 
+              <p>
+                An initial response must be a case-specific reply from Trustpoint Labs Support. An automated acknowledgement does not count as an initial response. Missing diagnostic information may delay troubleshooting but does not change the start of the response time.
+              </p>
               <p>
                 Resolution time depends on factors including problem complexity, reproducibility, availability of diagnostic information, customer response times, required software changes and dependencies on third-party systems.
               </p>
@@ -647,7 +666,7 @@ const securityEmail = "security@trustpoint-labs.com";
               <h2>Business-hours support in Europe/Berlin.</h2>
               <p><strong>Monday–Friday, 09:00–17:00 Europe/Berlin</strong></p>
               <p>
-                German public holidays are excluded. Response targets are measured only during these support hours. A case submitted outside business hours begins accruing support time at the start of the next support period.
+                Public holidays in Baden-Württemberg, Germany, are excluded. Response targets are measured only during these support hours. A case submitted outside support hours begins accruing response time at the start of the next support period.
               </p>
               <p>Trustpoint Labs does not currently provide standard 24/7 support.</p>
             </section>
@@ -680,6 +699,17 @@ const securityEmail = "security@trustpoint-labs.com";
               </div>
             </section>
 
+            <section class="support-section" id="case-lifecycle">
+              <div class="section-label"><span class="square"></span>SUPPORT CASE LIFECYCLE</div>
+              <h2>Clear progress from submission to closure.</h2>
+              <p>
+                Support cases are tracked through Open, In Progress, Waiting for Customer, Resolved and Closed. A case may be placed in Waiting for Customer when additional information or action is required from the customer. This does not retrospectively change the initial response target.
+              </p>
+              <p>
+                A case may be considered resolved when a solution, reasonable workaround or final technical assessment has been provided. Cases may be closed following customer confirmation or after a reasonable period without further response. Closed cases may be reopened if the same issue recurs.
+              </p>
+            </section>
+
             <section class="support-section" id="responsibilities">
               <div class="section-label"><span class="square"></span>CUSTOMER RESPONSIBILITIES</div>
               <h2>Effective support requires cooperation.</h2>
@@ -710,18 +740,23 @@ const securityEmail = "security@trustpoint-labs.com";
                 This includes suspected authentication or authorization bypasses, privilege escalation, unintended disclosure of sensitive information, cryptographic implementation weaknesses, or vulnerabilities affecting the confidentiality, integrity or availability of Trustpoint.
               </p>
               <p>
-                Please provide sufficient technical information to reproduce and evaluate the issue. Do not include private keys, passwords or production secrets unless a secure transfer method has been agreed.
+                Please provide sufficient technical information to reproduce and evaluate the issue. Do not send private keys, passwords, production credentials or other sensitive information in unencrypted emails. Contact us first if a secure transfer method is required. Additional security contact information is available in our <a href="/.well-known/security.txt">security.txt</a>.
               </p>
             </section>
 
             <section class="support-section" id="professional-services">
               <div class="section-label"><span class="square"></span>PROFESSIONAL SERVICES</div>
-              <h2>Need more than break/fix support?</h2>
+              <h2>Industrial PKI integration, engineering and consulting beyond support.</h2>
               <p>
                 Requests outside the standard support scope can be handled separately through Trustpoint Labs Professional Services. This may include deployment, PKI and machine-identity architecture, integration engineering, device integration, custom automation, Web-UI Automation profiles, custom development, workshops, training and security consulting.
               </p>
+              <p>
+                Learn more about our <a href="/engineering-integration/">Engineering &amp; Integration services</a>
+                for vendor-independent industrial PKI deployment and integration projects, or explore <a href="/use-cases/">industrial PKI and machine identity use cases</a>
+                to see where certificate lifecycle management is applied.
+              </p>
               <div class="support-cta">
-                <h3>Commercial support for production Trustpoint environments.</h3>
+                <h3>Discuss a Trustpoint support agreement.</h3>
                 <p>
                   Trustpoint Labs commercial support is available under an individual support agreement. Contact us to discuss your requirements.
                 </p>
@@ -741,6 +776,8 @@ const securityEmail = "security@trustpoint-labs.com";
 
         <div class="footer-links">
           <a href="/">Home</a>
+          <a href="/engineering-integration/">Engineering &amp; Integration</a>
+          <a href="/use-cases/">Use Cases</a>
           <a href="/imprint">Imprint</a>
           <a href="/privacy">Privacy</a>
         </div>

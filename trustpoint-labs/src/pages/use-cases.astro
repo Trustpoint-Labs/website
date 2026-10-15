@@ -18,15 +18,15 @@ const githubUrl = "https://github.com/Trustpoint-Project";
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Use Cases | Trustpoint Labs</title>
+    <title>Industrial PKI &amp; Machine Identity Use Cases | Trustpoint Labs</title>
 
     <meta
       name="description"
-      content="Explore Trustpoint use cases across industrial automation, building automation, critical infrastructure and defence — from OEM and white-label integration to domain and operator deployments."
+      content="Explore industrial PKI and machine identity use cases, from OPC UA certificate management and automated enrollment to brownfield and edge security."
     />
 
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://trustpoint-labs.com/use-cases" />
+    <link rel="canonical" href="https://trustpoint-labs.com/use-cases/" />
     <link rel="icon" type="image/png" href={trustpointFavicon} />
   </head>
 
@@ -65,22 +65,21 @@ const githubUrl = "https://github.com/Trustpoint-Project";
 
         <div class="use-cases-hero-grid">
           <div>
-            <h1>
-              Machine identity across products, domains and infrastructure.
-            </h1>
+            <h1>Industrial PKI &amp; Machine Identity Use Cases</h1>
           </div>
 
           <div>
             <p class="use-cases-lede">
-              Trustpoint can be embedded into products, integrated into
-              operational domains, or connected to operator-wide PKI and
-              identity infrastructures.
+              Solve industrial certificate lifecycle and machine identity challenges
+              with vendor-independent PKI engineering, integration and consulting.
+              Trustpoint is our open-source platform for suitable deployments.
             </p>
 
             <p class="use-cases-note">
-              Explore how the same machine-identity foundation can be applied
-              across industrial automation, building automation, critical
-              infrastructure and defence environments.
+              Machine identity across products, domains and infrastructure:
+              explore practical technical applications, then use the interactive
+              explorer to see representative deployment patterns across industrial
+              automation, building automation, critical infrastructure and defence.
             </p>
           </div>
         </div>
@@ -90,6 +89,7 @@ const githubUrl = "https://github.com/Trustpoint-Project";
         <aside class="use-cases-sidebar" aria-label="Use cases page navigation">
           <nav>
             <a href="#overview" class="use-cases-sidebar-link is-active">Overview</a>
+            <a href="#technical-examples" class="use-cases-sidebar-link">Technical Applications</a>
             <a href="#explorer" class="use-cases-sidebar-link">Use Case Explorer</a>
             <a href="#integration-levels" class="use-cases-sidebar-link">Integration Levels</a>
             <a href="#verticals" class="use-cases-sidebar-link">Verticals</a>
@@ -99,18 +99,62 @@ const githubUrl = "https://github.com/Trustpoint-Project";
         </aside>
 
         <div class="use-cases-content">
+          <section id="technical-examples" class="use-cases-section technical-examples-section">
+            <div class="section-label compact-label"><span class="square"></span>TECHNICAL APPLICATIONS</div>
+            <h2>Industrial Certificate Management Applications</h2>
+            <p>Industrial machines, applications and operational networks need dependable certificate lifecycles. Trustpoint Labs assesses the customer problem first, selects suitable open-standard PKI components, and integrates Trustpoint where it fits the technical and operational requirements.</p>
+            <div class="technical-examples-grid">
+              <article class="technical-example-card">
+                <span class="technical-example-number">01</span>
+                <h3>OPC UA Certificate Management</h3>
+                <p><strong>Challenge:</strong> Manually distributing and renewing OPC UA application certificates can create outages, inconsistent trust lists and unnecessary maintenance work.</p>
+                <p><strong>Approach:</strong> Design and integrate certificate and trust-list lifecycle workflows with compatible OPC UA Global Discovery Server (GDS) functionality and an appropriate issuing PKI. Trustpoint can support compatible GDS integration scenarios.</p>
+                <div class="technical-example-meta"><strong>Typical assets</strong><p>OPC UA servers · OPC UA clients · Industrial controllers</p></div>
+                <div class="technical-example-meta"><strong>Prerequisites</strong><p>Compatible OPC UA applications, a supported GDS workflow and an agreed certificate and trust policy.</p></div>
+                <p class="technical-example-links"><a href="/engineering-integration/">Explore OPC UA PKI integration</a> · <a href="/support/">Discuss operational support</a></p>
+              </article>
+              <article class="technical-example-card">
+                <span class="technical-example-number">02</span>
+                <h3>Automated Certificate Enrollment (EST / CMP)</h3>
+                <p><strong>Challenge:</strong> Manual certificate provisioning and renewal do not scale reliably across fleets of embedded and industrial devices.</p>
+                <p><strong>Approach:</strong> Integrate standards-based enrollment and renewal using EST or CMP, together with device authentication, certificate templates and policy controls. Trustpoint provides EST and CMP capabilities for compatible systems.</p>
+                <div class="technical-example-meta"><strong>Typical assets</strong><p>Industrial gateways · Networked devices · Embedded systems</p></div>
+                <div class="technical-example-meta"><strong>Prerequisites</strong><p>Support for the selected protocol on the device or an integration component, plus an approved authentication and certificate policy.</p></div>
+                <p class="technical-example-links"><a href="/engineering-integration/">Plan certificate enrollment integration</a> · <a href="/support/">Get lifecycle support</a></p>
+              </article>
+              <article class="technical-example-card">
+                <span class="technical-example-number">03</span>
+                <h3>Brownfield Certificate Management</h3>
+                <p><strong>Challenge:</strong> Existing switches, firewalls and gateways may have certificate upload interfaces but no automated enrollment protocol, leaving renewal as a manual task.</p>
+                <p><strong>Approach:</strong> Assess supported device interfaces and automate validated certificate-management steps where feasible. Trustpoint's Web-UI Automation approach provides a device-specific option; not every device or workflow is supported.</p>
+                <div class="technical-example-meta"><strong>Typical assets</strong><p>Industrial switches · Firewalls · Legacy gateways</p></div>
+                <div class="technical-example-meta"><strong>Prerequisites</strong><p>A compatible administration interface, a validated device profile, secure credential handling and testing of device-specific operations.</p></div>
+                <p class="technical-example-links"><a href="/engineering-integration/">Discuss brownfield engineering</a> · <a href="/support/">Discuss long-term support</a></p>
+              </article>
+              <article class="technical-example-card">
+                <span class="technical-example-number">04</span>
+                <h3>Industrial Edge &amp; Gateway Security</h3>
+                <p><strong>Challenge:</strong> Edge gateways and industrial applications operate across segmented networks and need consistent TLS identities without relying on permanent cloud connectivity.</p>
+                <p><strong>Approach:</strong> Design local or centrally connected PKI workflows for provisioning, renewal and trust-store management. Depending on interfaces and deployment constraints, Trustpoint or other suitable PKI technologies can be integrated.</p>
+                <div class="technical-example-meta"><strong>Typical assets</strong><p>Edge gateways · Industrial PCs · Industrial applications</p></div>
+                <div class="technical-example-meta"><strong>Prerequisites</strong><p>Supported certificate interfaces, a defined trust model and access to the issuing CA when certificates must be issued or renewed.</p></div>
+                <p class="technical-example-links"><a href="/engineering-integration/">Explore industrial edge integration</a> · <a href="/support/">Discuss PKI maintenance</a></p>
+              </article>
+            </div>
+          </section>
+
           <section id="explorer" class="use-cases-section explorer-section">
             <div class="section-label compact-label">
               <span class="square"></span>
               USE CASE EXPLORER
             </div>
 
-            <h2>Choose your environment. Then choose where Trustpoint fits.</h2>
+            <h2>Explore Industrial PKI Deployment Scenarios</h2>
 
             <p>
-              Select a vertical and integration level to explore a representative
-              deployment pattern, typical assets, relevant capabilities and the
-              role Trustpoint can play in that environment.
+              Choose an industry and integration level to explore a representative
+              machine-identity deployment, its assets and prerequisites, and where
+              Trustpoint can contribute alongside existing PKI infrastructure.
             </p>
 
             <div class="selector-block">
@@ -125,10 +169,10 @@ const githubUrl = "https://github.com/Trustpoint-Project";
               </div>
 
               <div class="selector-row" role="group" aria-label="Choose a vertical">
-                <button class="selector-button vertical-button is-selected" type="button" data-vertical="industrial">Industrial</button>
-                <button class="selector-button vertical-button" type="button" data-vertical="building">Building Automation</button>
-                <button class="selector-button vertical-button" type="button" data-vertical="critical">Critical Infrastructure</button>
-                <button class="selector-button vertical-button" type="button" data-vertical="defence">Defence</button>
+                <button class="selector-button vertical-button is-selected" type="button" aria-pressed="true" data-vertical="industrial">Industrial</button>
+                <button class="selector-button vertical-button" type="button" aria-pressed="false" data-vertical="building">Building Automation</button>
+                <button class="selector-button vertical-button" type="button" aria-pressed="false" data-vertical="critical">Critical Infrastructure</button>
+                <button class="selector-button vertical-button" type="button" aria-pressed="false" data-vertical="defence">Defence</button>
               </div>
             </div>
 
@@ -142,10 +186,10 @@ const githubUrl = "https://github.com/Trustpoint-Project";
               </div>
 
               <div class="selector-row" role="group" aria-label="Choose an integration level">
-                <button class="selector-button level-button" type="button" data-level="personalization">Device Personalization</button>
-                <button class="selector-button level-button" type="button" data-level="oem">OEM / White Label</button>
-                <button class="selector-button level-button is-selected" type="button" data-level="domain">Domain Integration</button>
-                <button class="selector-button level-button" type="button" data-level="operator">Operator Integration</button>
+                <button class="selector-button level-button" type="button" aria-pressed="false" data-level="personalization">Device Personalization</button>
+                <button class="selector-button level-button" type="button" aria-pressed="false" data-level="oem">OEM / White Label</button>
+                <button class="selector-button level-button is-selected" type="button" aria-pressed="true" data-level="domain">Domain Integration</button>
+                <button class="selector-button level-button" type="button" aria-pressed="false" data-level="operator">Operator Integration</button>
               </div>
             </div>
 
@@ -217,7 +261,7 @@ const githubUrl = "https://github.com/Trustpoint-Project";
                 </div>
 
                 <p class="architecture-note" id="architecture-note">
-                  Trustpoint operates inside the selected deployment level. An upstream authority or central PKI is optional.
+                  Illustrative deployment topology. Connections represent logical relationships, not specific protocols or communication flows.
                 </p>
               </div>
             </div>
@@ -235,15 +279,13 @@ const githubUrl = "https://github.com/Trustpoint-Project";
               <article class="level-card">
                 <span>01</span>
                 <h3>Device Personalization</h3>
-                <p>Provision one device with security material during manufacturing or initial setup: secure boot keys, bootstrap credentials, trust anchors, trust stores, IDevIDs and symmetric keys. These are potential provisioning workflows, not a claim of current feature availability.</p>
+                <p>Establish cryptographic device identities during manufacturing or initial provisioning, including device certificates, IDevIDs and trust anchors. Related workflows, such as secure-boot material or symmetric-key provisioning, depend on device hardware and integration scope.</p>
               </article>
               <article class="level-card">
                 <span>02</span>
                 <h3>OEM / White Label</h3>
                 <p>
-                  Trustpoint becomes part of another vendor's product, appliance
-                  or platform and provides machine-identity capabilities as an
-                  embedded technology component.
+                  Trustpoint can be integrated into a vendor's product, appliance or platform as an open-source machine-identity component. Trustpoint Labs offers OEM and white-label engineering and integration services; purchasing a proprietary Trustpoint licence is not required.
                 </p>
               </article>
 
@@ -262,10 +304,7 @@ const githubUrl = "https://github.com/Trustpoint-Project";
                 <span>04</span>
                 <h3>Operator Integration</h3>
                 <p>
-                  Trustpoint is deployed at operator level and coordinates identity
-                  and certificate lifecycle processes across multiple operational
-                  domains. An upstream authority or central PKI can be connected
-                  where required.
+                  Trustpoint is deployed at operator level to manage machine identities and certificate lifecycles across multiple operational domains. It can integrate with an upstream PKI where required, while supporting OT-specific deployment and connectivity constraints.
                 </p>
               </article>
             </div>
@@ -335,10 +374,16 @@ const githubUrl = "https://github.com/Trustpoint-Project";
               <li>External PKI / RA integration</li>
               <li>Brownfield onboarding</li>
               <li>Web-UI Automation</li>
-              <li>Local, offline and air-gapped deployment</li>
+              <li>Local, offline and air-gapped deployment (local issuance and renewal require a reachable issuing CA)</li>
               <li>PKCS#11 / HSM integration where applicable</li>
               <li>Audit logging and lifecycle traceability</li>
             </ul>
+          </section>
+
+          <section class="use-cases-section" aria-labelledby="oss-services-heading">
+            <div class="section-label compact-label"><span class="square"></span>OPEN SOURCE & SERVICES</div>
+            <h2 id="oss-services-heading">Open-source technology. Practical integration.</h2>
+            <p>Trustpoint is an open-source platform for machine identity and certificate lifecycle management. Trustpoint Labs provides engineering, integration, OEM and white-label development, and support services to adapt Trustpoint to products and operational environments.</p>
           </section>
 
           <section id="start-project" class="use-cases-section use-cases-cta">
@@ -347,16 +392,16 @@ const githubUrl = "https://github.com/Trustpoint-Project";
               START A PROJECT
             </div>
 
-            <h2>Where should Trustpoint fit in your environment?</h2>
+            <h2>Discuss your industrial PKI challenge</h2>
 
             <p>
-              Tell us about your devices, operational domain, PKI environment and
-              integration requirements. We can help translate the use case into a
-              concrete Trustpoint architecture and implementation scope.
+              Tell us about your devices, current PKI, certificate lifecycle challenges
+              and integration requirements. Trustpoint Labs provides vendor-independent
+              engineering and consulting, with Trustpoint as an open-source option where appropriate.
             </p>
 
             <a class="button button-primary" href="/#contact">
-              Discuss your use case
+              Discuss your PKI project
               <span>→︎</span>
             </a>
           </section>
@@ -378,8 +423,8 @@ const githubUrl = "https://github.com/Trustpoint-Project";
 
         <div class="footer-links">
           <a href="/">Home</a>
-          <a href="/engineering-integration">Engineering & Integration</a>
-          <a href="/support">Support</a>
+            <a href="/engineering-integration/">Engineering &amp; Integration</a>
+            <a href="/support/">Support</a>
           <a href="/imprint">Imprint</a>
           <a href="/privacy">Privacy</a>
         </div>
@@ -432,7 +477,7 @@ const githubUrl = "https://github.com/Trustpoint-Project";
             kicker: 'INDUSTRIAL · OPERATOR INTEGRATION',
             title: 'Plant-wide machine identity infrastructure',
             environment: 'An industrial operator needs a consistent certificate and trust model across multiple production areas, machines and segmented OT networks.',
-            role: 'Trustpoint acts as the OT-facing identity and lifecycle layer and connects multiple operational domains with central PKI and governance processes.',
+            role: 'Trustpoint manages machine identities and certificate lifecycles across multiple operational domains and can integrate with central PKI and governance processes.',
             assets: ['Production lines', 'Machines', 'OT edge systems', 'Gateways', 'Industrial applications'],
             capabilities: ['External PKI / RA', 'Multi-domain lifecycle', 'REST', 'Audit logging', 'Offline operation'],
             outcome: 'Operators gain consistent machine-identity lifecycle management across production environments while keeping PKI integration close to OT.',
@@ -474,7 +519,7 @@ const githubUrl = "https://github.com/Trustpoint-Project";
             trustpointLabel: 'Building-domain Trustpoint',
             domainLabel: 'Building / Floor / Technical Domain',
             assetsLabel: 'HVAC · Access · Gateways · BMS',
-            architectureNote: 'Trustpoint provides a local identity layer inside the building domain and can synchronize trust with an upstream PKI.',
+            architectureNote: 'Trustpoint provides a local identity layer inside the building domain and can integrate with an upstream PKI when connectivity and configuration permit.',
             focus: 'trustpoint',
             cta: 'Discuss a domain integration'
           },
@@ -482,7 +527,7 @@ const githubUrl = "https://github.com/Trustpoint-Project";
             kicker: 'BUILDING AUTOMATION · OPERATOR INTEGRATION',
             title: 'Certificate lifecycle across a building portfolio',
             environment: 'A campus or facility operator manages multiple buildings and needs common identity and certificate policies across distributed automation domains.',
-            role: 'Trustpoint connects building-level domains to centralized PKI and operational governance while allowing local lifecycle processes where needed.',
+            role: 'Trustpoint manages certificate lifecycles across building domains and can integrate with centralized PKI and operational governance.',
             assets: ['Buildings', 'BMS platforms', 'Gateways', 'Controllers', 'Facility applications'],
             capabilities: ['External PKI / RA', 'Multi-domain lifecycle', 'REST', 'Audit logging', 'Segmented deployment'],
             outcome: 'The operator gains a consistent trust model across multiple buildings without centralizing every operational interaction.',
@@ -519,7 +564,7 @@ const githubUrl = "https://github.com/Trustpoint-Project";
             role: 'Trustpoint provides local identity lifecycle and trust services inside the operational domain while preserving an optional connection to central PKI.',
             assets: ['Substation gateway', 'RTU', 'Protection relay', 'Industrial controller', 'Edge system'],
             capabilities: ['Local CA / RA', 'EST / CMP', 'Offline operation', 'Audit logging', 'External PKI integration'],
-            outcome: 'Certificate lifecycle remains operational and auditable even when the local domain is isolated or only intermittently connected.',
+            outcome: 'Local certificate lifecycle operations can continue in isolated environments when an issuing CA is reachable inside the domain.',
             operatorLabel: 'Utility / Enterprise PKI',
             trustpointLabel: 'Site / Station Trustpoint',
             domainLabel: 'Substation / Site / Process Unit',
@@ -532,7 +577,7 @@ const githubUrl = "https://github.com/Trustpoint-Project";
             kicker: 'CRITICAL INFRASTRUCTURE · OPERATOR INTEGRATION',
             title: 'Identity governance across distributed operational sites',
             environment: 'An operator manages geographically distributed sites and needs consistent machine-identity policies without requiring every field asset to connect centrally.',
-            role: 'Trustpoint acts as the operational identity layer across sites and connects local lifecycle processes with centralized PKI, policy and audit requirements.',
+            role: 'Trustpoint manages machine identities across operational sites and can integrate with centralized PKI, policy and audit requirements.',
             assets: ['Substations', 'Utility sites', 'Edge clusters', 'Field networks', 'Operational applications'],
             capabilities: ['Multi-site lifecycle', 'External PKI / RA', 'Audit logging', 'Segmented deployment', 'Local operation'],
             outcome: 'Central trust policy and local operational resilience can coexist across distributed critical infrastructure.',
@@ -566,10 +611,10 @@ const githubUrl = "https://github.com/Trustpoint-Project";
             kicker: 'DEFENCE · DOMAIN INTEGRATION',
             title: 'Identity lifecycle inside a vehicle, platform or mission domain',
             environment: 'A vehicle, platform or mission system contains multiple digital assets that require controlled trust while operating with restricted connectivity.',
-            role: 'Trustpoint provides a local trust and certificate lifecycle layer inside the operational domain and can synchronize with upstream authority when connectivity is available.',
+            role: 'Trustpoint provides a local trust and certificate lifecycle layer inside the operational domain and can integrate with an upstream authority when connectivity is available.',
             assets: ['Vehicle controller', 'Mission computer', 'Gateway', 'Sensor platform', 'Edge node'],
             capabilities: ['Local CA / RA', 'Offline operation', 'Certificate lifecycle', 'PKCS#11 / HSM', 'Audit logging'],
-            outcome: 'The operational domain retains local control of identity lifecycle even during disconnected operation.',
+            outcome: 'The operational domain can retain local certificate lifecycle control during disconnected operation when an issuing CA is locally reachable.',
             operatorLabel: 'Authority / Central PKI',
             trustpointLabel: 'Platform-domain Trustpoint',
             domainLabel: 'Vehicle / Platform / Mission System',
@@ -582,10 +627,10 @@ const githubUrl = "https://github.com/Trustpoint-Project";
             kicker: 'DEFENCE · OPERATOR INTEGRATION',
             title: 'Controlled identity infrastructure across operational domains',
             environment: 'An operator needs consistent trust and certificate lifecycle across multiple controlled, segmented or disconnected operational domains.',
-            role: 'Trustpoint provides the operational identity layer between centralized authority and distributed platforms while preserving local operation and sovereignty.',
+            role: 'Trustpoint manages machine identities across distributed platforms and can integrate with centralized authority while supporting local operational constraints.',
             assets: ['Platforms', 'Vehicles', 'Mission systems', 'Operational sites', 'Edge environments'],
             capabilities: ['Multi-domain lifecycle', 'External PKI / RA', 'Offline operation', 'Audit logging', 'Sovereign deployment'],
-            outcome: 'Central identity governance can be extended into disconnected operational domains without creating a permanent central dependency.',
+            outcome: 'Central identity governance can extend to segmented operational domains; local issuance and renewal during disconnection require a locally reachable issuing CA.',
             operatorLabel: 'Central Authority / PKI',
             trustpointLabel: 'Operator Layer',
             domainLabel: 'Platforms / Operational Domains',
@@ -653,18 +698,18 @@ const githubUrl = "https://github.com/Trustpoint-Project";
         }
       };
 
-      const personalizationItems = ['Secure Boot Keys', 'Bootstrap Credentials', 'Trust Anchors', 'Trust Stores', 'IDevIDs', 'Symmetric Keys'];
+      const personalizationItems = ['Device Certificates', 'IDevIDs', 'Trust Anchors', 'Trust Stores'];
       const personalizationScenario = {
         kicker: 'DEVICE PERSONALIZATION',
-        title: 'Establish device trust during manufacturing and provisioning',
-        environment: 'A single device or product is prepared with cryptographic security material before deployment into its operational environment.',
-        role: 'Trustpoint can support secure provisioning workflows for device identities, boot integrity, initial access and trusted communication. Actual key handling depends on device hardware and integration requirements.',
+        title: 'Establish trusted device identities during manufacturing',
+        environment: 'A device or product receives its cryptographic identity and initial trust configuration before entering its operational environment.',
+        role: 'Trustpoint supports device-identity and certificate provisioning workflows. Private keys should preferably be generated and retained within the device or suitable security hardware. Additional security-material provisioning depends on the integration.',
         assets: personalizationItems,
-        capabilities: ['Device identity provisioning', 'Secure boot material', 'Bootstrap provisioning', 'Trust anchor distribution', 'Key management integration'],
-        outcome: 'A device can enter its operational lifecycle with a defined cryptographic identity and trust configuration.',
+        capabilities: ['Device identity provisioning', 'IDevID / certificate provisioning', 'Trust anchor distribution', 'PKI integration'],
+        outcome: 'Devices enter operation with defined cryptographic identities and an established trust configuration.',
         operatorLabel: 'Manufacturer / External CA',
         trustpointLabel: 'Personalization Station',
-        architectureNote: 'Private keys may be generated and retained within the device hardware rather than exported.',
+        architectureNote: 'Private keys should preferably be generated and retained within the device or suitable security hardware.',
         cta: 'Discuss device personalization'
       };
 
@@ -732,7 +777,7 @@ const githubUrl = "https://github.com/Trustpoint-Project";
               <div class="domain-connector" aria-hidden="true"><span></span></div>
               <div class="operational-domain-zone">
                 <div class="nested-zone-header"><span>TARGET DEVICE</span><strong>Device / Product</strong></div>
-                <div class="asset-heading-row"><span class="asset-heading">PROVISIONED SECURITY MATERIAL</span><span class="asset-count">6 ITEMS</span></div>
+                <div class="asset-heading-row"><span class="asset-heading">PROVISIONED SECURITY MATERIAL</span><span class="asset-count">${personalizationItems.length} ITEMS</span></div>
                 <div class="asset-grid personalization-materials">
                   ${personalizationItems.map((item) => assetTile(item)).join('')}
                 </div>
@@ -817,15 +862,19 @@ const githubUrl = "https://github.com/Trustpoint-Project";
         document.getElementById('scenario-outcome').textContent = scenario.outcome;
         document.getElementById('scenario-cta').childNodes[0].textContent = scenario.cta + ' ';
         document.getElementById('arch-operator-label').textContent = scenario.operatorLabel;
-        document.getElementById('architecture-note').textContent = `${scenario.architectureNote} The upstream authority / central PKI is optional.`;
+        const offlineNote = scenario.capabilities.some((capability) => /offline|local operation/i.test(capability))
+          ? ' Offline operation: Local certificate issuance and renewal require an issuing CA reachable within the isolated environment. Deployments relying on an unreachable external issuing CA cannot complete issuance or renewal.'
+          : '';
+        document.getElementById('architecture-note').textContent = `${scenario.architectureNote} Illustrative deployment topology. Connections represent logical relationships, not specific protocols or communication flows.${offlineNote}`;
         renderTopology(scenario);
       };
 
       document.querySelectorAll('.vertical-button').forEach((button) => {
         button.addEventListener('click', () => {
           selectedVertical = button.dataset.vertical;
-          document.querySelectorAll('.vertical-button').forEach((item) => item.classList.remove('is-selected'));
+          document.querySelectorAll('.vertical-button').forEach((item) => { item.classList.remove('is-selected'); item.setAttribute('aria-pressed', 'false'); });
           button.classList.add('is-selected');
+          button.setAttribute('aria-pressed', 'true');
           updateScenario();
         });
       });
@@ -833,8 +882,9 @@ const githubUrl = "https://github.com/Trustpoint-Project";
       document.querySelectorAll('.level-button').forEach((button) => {
         button.addEventListener('click', () => {
           selectedLevel = button.dataset.level;
-          document.querySelectorAll('.level-button').forEach((item) => item.classList.remove('is-selected'));
+          document.querySelectorAll('.level-button').forEach((item) => { item.classList.remove('is-selected'); item.setAttribute('aria-pressed', 'false'); });
           button.classList.add('is-selected');
+          button.setAttribute('aria-pressed', 'true');
           updateScenario();
         });
       });
@@ -1647,7 +1697,7 @@ const githubUrl = "https://github.com/Trustpoint-Project";
       }
 
       .level-card h3,
-      .vertical-card h3,
+      .vertical-card h3 { margin-top: 16px; }
       .personalization-materials { margin-top: 16px; }
       .is-personalization .trustpoint-instance { margin-bottom: 0; }
       .personalization-grid h3 {
@@ -1872,6 +1922,38 @@ const githubUrl = "https://github.com/Trustpoint-Project";
           left: 16%;
           right: 16%;
         }
+      }
+
+      .technical-examples-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+        margin-top: 28px;
+      }
+      .technical-example-card {
+        border: 1px solid var(--border, #dce3eb);
+        border-radius: 12px;
+        padding: 26px;
+        min-width: 0;
+      }
+      .technical-example-number {
+        display: block;
+        color: var(--trustpoint-blue);
+        font-weight: 700;
+        margin-bottom: 14px;
+      }
+      .technical-example-card h3 { margin: 0 0 14px; font-size: 22px; line-height: 1.25; }
+      .technical-example-card > p { line-height: 1.65; color: var(--muted); }
+      .technical-example-card > p + p { margin-top: 12px; }
+      .technical-example-card .technical-example-links { margin-top: 22px; }
+      .technical-example-links a { color: var(--trustpoint-blue); text-decoration: underline; text-underline-offset: 3px; }
+      .technical-example-links a:hover, .technical-example-links a:focus-visible { text-decoration-thickness: 2px; }
+      .technical-example-meta { margin-top: 20px; }
+      .technical-example-meta strong { font-size: 13px; }
+      .technical-example-meta p { margin: 6px 0 0; line-height: 1.5; color: var(--muted); }
+      @media (max-width: 760px) {
+        .technical-examples-grid { grid-template-columns: minmax(0, 1fr); }
+        .technical-example-card { padding: 20px; }
       }
     </style>
   </body>

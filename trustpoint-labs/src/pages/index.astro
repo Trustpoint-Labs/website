@@ -22,12 +22,12 @@ const githubUrl = "https://github.com/Trustpoint-Project";
     />
 
     <title>
-      Industrial Machine Identity & PKI | Trustpoint Labs
+      Industrial PKI & Machine Identity Management | Trustpoint Labs
     </title>
 
     <meta
       name="description"
-      content="Trustpoint Labs provides engineering, integration, support and OEM services for industrial machine identity, PKI integration and certificate lifecycle management in OT environments."
+      content="Vendor-independent industrial PKI engineering, integration, consulting and support. Secure machine identities and automate certificates across OT environments."
     />
 
     <meta
@@ -52,6 +52,18 @@ const githubUrl = "https://github.com/Trustpoint-Project";
       href="/apple-touch-icon.png"
     />
 
+    <meta name="theme-color" content="#004aad" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      name: "Trustpoint Labs",
+      url: "https://trustpoint-labs.com/",
+      sameAs: ["https://github.com/Trustpoint-Project"],
+      description: "Vendor-independent engineering, integration, consulting and support for industrial PKI and machine identity management."
+    })} />
+
     <!-- Open Graph -->
 
     <meta
@@ -61,12 +73,12 @@ const githubUrl = "https://github.com/Trustpoint-Project";
 
     <meta
       property="og:title"
-      content="Industrial Machine Identity & PKI | Trustpoint Labs"
+      content="Industrial PKI & Machine Identity Management | Trustpoint Labs"
     />
 
     <meta
       property="og:description"
-      content="Engineering, integration, support and OEM services for industrial machine identity, PKI and certificate lifecycle management."
+      content="Vendor-independent industrial PKI engineering, integration, consulting and support for machine identity and certificate lifecycle management."
     />
 
     <meta
@@ -96,7 +108,7 @@ const githubUrl = "https://github.com/Trustpoint-Project";
 
     <meta
       property="og:image:alt"
-      content="Trustpoint Labs – Industrial Machine Identity and PKI"
+      content="Trustpoint Labs – Industrial PKI and Machine Identity Management"
     />
 
   </head>
@@ -172,16 +184,17 @@ const githubUrl = "https://github.com/Trustpoint-Project";
           </div>
 
           <h1>
-            Industrial machine identity.<br />
-            <span class="hero-accent">
-              Implemented for your environment.
-            </span>
+            Industrial PKI & machine identity.<br />
+              <span class="hero-accent">
+                Engineered for your environment.
+              </span>
           </h1>
 
           <p class="hero-description">
-            Trustpoint Labs helps manufacturers and operators deploy
-            secure machine identities, automate certificate lifecycles
-            and integrate industrial PKI into real OT environments.
+            Vendor-independent industrial PKI engineering, integration,
+            consulting and support for manufacturers, system integrators
+            and operators. Secure machine identities, automate certificate
+            lifecycles and connect OT systems with existing PKI infrastructure.
           </p>
 
           <div class="actions">
@@ -196,7 +209,7 @@ const githubUrl = "https://github.com/Trustpoint-Project";
 
             <a
               class="button button-secondary"
-              href="/use-cases"
+              href="/use-cases/"
             >
               Explore use cases
               <span>→︎</span>
@@ -205,7 +218,7 @@ const githubUrl = "https://github.com/Trustpoint-Project";
           </div>
 
           <div class="hero-note">
-            Open-source foundation · Industrial integration · Engineering support
+            Open standards · Vendor-independent engineering · Open-source Trustpoint expertise
           </div>
 
         </div>
@@ -243,8 +256,10 @@ const githubUrl = "https://github.com/Trustpoint-Project";
             </p>
 
             <p class="lede">
-              Trustpoint brings PKI close to devices and machines —
-              including segmented and offline OT networks.
+              Trustpoint Labs designs machine identity and certificate-management
+              solutions around your operational requirements and existing PKI.
+              Our open-source Trustpoint platform is a key option where local,
+              segmented or offline operation is needed.
             </p>
 
           </div>
@@ -365,14 +380,15 @@ const githubUrl = "https://github.com/Trustpoint-Project";
           <div class="offering-heading">
 
             <h2>
-              From open-source technology
-              to production deployment.
+              Industrial PKI services
+              from design to operation.
             </h2>
 
             <p class="lede">
-              Trustpoint Labs provides engineering, integration,
-              support and OEM services around the Trustpoint
-              open-source platform.
+              From independent PKI architecture consulting and integration
+              to custom engineering and ongoing Trustpoint product support,
+              we help turn industrial certificate-management requirements
+              into practical deployments.
             </p>
 
           </div>
@@ -387,12 +403,13 @@ const githubUrl = "https://github.com/Trustpoint-Project";
               </span>
 
               <h3>
-                Engineering & Integration
+                Engineering, Integration & Consulting
               </h3>
 
               <p>
-                Integrate Trustpoint into your devices,
-                applications and PKI infrastructure.
+                Design industrial PKI architectures and integrate devices,
+                applications and certificate workflows using Trustpoint
+                or suitable existing PKI technologies.
               </p>
 
               <ul>
@@ -400,11 +417,11 @@ const githubUrl = "https://github.com/Trustpoint-Project";
                 <li>CMP / EST integration</li>
                 <li>OPC UA / GDS integration</li>
                 <li>Custom connectors and plugins</li>
-                <li>Architecture and implementation support</li>
+                <li>PKI architecture &amp; industrial security consulting</li>
               </ul>
 
               <a
-                href="/engineering-integration"
+                href="/engineering-integration/"
                 class="offering-link"
               >
                 View details
@@ -425,20 +442,20 @@ const githubUrl = "https://github.com/Trustpoint-Project";
               </h3>
 
               <p>
-                Technical support for production deployments
-                and operational Trustpoint environments.
+                Contract-based break/fix support for official Trustpoint
+                releases used in production environments.
               </p>
 
               <ul>
                 <li>Business-hours support</li>
-                <li>Incident response</li>
+                <li>Severity-based response targets</li>
                 <li>Troubleshooting</li>
                 <li>Upgrade assistance</li>
-                <li>Hands-on engineering support</li>
+                <li>Documented product defect analysis</li>
               </ul>
 
               <a
-                href="/support"
+                href="/support/"
                 class="offering-link"
               >
                 View support details
@@ -470,6 +487,11 @@ const githubUrl = "https://github.com/Trustpoint-Project";
                 <li>Third-level support</li>
                 <li>Long-term engineering partnership</li>
               </ul>
+
+              <a href="/oem/" class="offering-link">
+                Explore OEM services
+                <span aria-hidden="true">→︎</span>
+              </a>
 
             </article>
 
@@ -503,9 +525,10 @@ const githubUrl = "https://github.com/Trustpoint-Project";
             </h2>
 
             <p>
-              Machine identity management built for real-world
-              industrial environments — open, interoperable and
-              designed around operational constraints.
+              Trustpoint is our open-source platform for industrial
+              certificate and machine identity management. We combine
+              this foundation with vendor-independent engineering and
+              existing customer PKI technologies where appropriate.
             </p>
 
           </div>
@@ -654,8 +677,9 @@ const githubUrl = "https://github.com/Trustpoint-Project";
             </h3>
 
             <p>
-              We implement Trustpoint, required protocols,
-              connectors and customer-specific workflows.
+                              We integrate appropriate PKI technologies, configure
+                Trustpoint where suitable, and implement connectors,
+                enrollment and customer-specific workflows.
             </p>
 
           </article>
@@ -672,8 +696,9 @@ const githubUrl = "https://github.com/Trustpoint-Project";
             </h3>
 
             <p>
-              We support the deployment through engineering
-              support, maintenance or SLA services.
+                              We hand over deployment documentation and can offer
+                separately agreed Trustpoint break/fix support,
+                maintenance or follow-on engineering.
             </p>
 
           </article>
@@ -815,14 +840,16 @@ const githubUrl = "https://github.com/Trustpoint-Project";
 
             <p class="open-source-copy">
               Trustpoint is available as open-source software
-              under the MIT license.
+              under the MIT license. It is a core technology in our
+              engineering toolkit, not a prerequisite for every engagement.
             </p>
 
             <p class="open-source-copy">
-              The open-source foundation provides transparency,
-              auditability and vendor independence. Trustpoint Labs
-              builds commercial engineering, integration, support
-              and OEM services around that foundation.
+              Our vendor-independent approach starts with your existing
+              PKI landscape and operational constraints. When Trustpoint
+              is the right fit, its open-source foundation enables
+              transparent, extensible local machine identity management.
+              Commercial Trustpoint support has its own defined scope.
             </p>
 
             <div class="open-source-actions">
@@ -833,7 +860,7 @@ const githubUrl = "https://github.com/Trustpoint-Project";
                 target="_blank"
                 rel="noreferrer"
               >
-                View GitHub
+                Explore Trustpoint on GitHub
                 <span>↗︎</span>
               </a>
 
@@ -867,13 +894,13 @@ const githubUrl = "https://github.com/Trustpoint-Project";
             <div class="contact-copy">
 
               <h2>
-                Let's build your
-                machine identity infrastructure.
+                              Let's solve your industrial
+              PKI and machine identity challenge.
               </h2>
 
               <p class="lede">
-                Tell us about your devices, PKI environment
-                or integration requirements.
+                Tell us about your certificate management challenges,
+                existing PKI, devices or integration requirements.
               </p>
 
               <div class="contact-next">
@@ -1044,13 +1071,26 @@ const githubUrl = "https://github.com/Trustpoint-Project";
               </summary>
 
               <p>
-                Trustpoint Labs provides commercial engineering,
-                integration, support and OEM services around
-                the Trustpoint open-source platform.
+                Trustpoint Labs provides vendor-independent industrial PKI
+                consulting, integration and custom engineering, plus
+                professional support for the open-source Trustpoint platform.
               </p>
 
             </details>
 
+
+            <details>
+              <summary>
+                Do I need to use Trustpoint to work with Trustpoint Labs?
+                <span aria-hidden="true">+</span>
+              </summary>
+              <p>
+                No. Our industrial PKI architecture, integration and consulting
+                services can work with existing enterprise PKI and OT systems.
+                We recommend Trustpoint where its open-source, locally deployable
+                capabilities are a suitable fit for the project.
+              </p>
+            </details>
 
             <details>
 
@@ -1079,7 +1119,8 @@ const githubUrl = "https://github.com/Trustpoint-Project";
               <p>
                 Trustpoint supports certificate management and
                 enrollment workflows using technologies including
-                CMP, EST, REST and OPC UA GDS Push.
+                CMP, EST, REST and OPC UA GDS Push, subject to the
+                capabilities of the relevant release and connected devices.
               </p>
 
             </details>
@@ -1093,10 +1134,10 @@ const githubUrl = "https://github.com/Trustpoint-Project";
               </summary>
 
               <p>
-                Yes. Trustpoint is designed for local and edge
-                deployment and can operate in segmented or
-                air-gapped OT environments without permanent
-                cloud connectivity.
+                Yes. Trustpoint supports local and edge deployments
+                without permanent cloud connectivity. In isolated
+                environments, certificate issuance and renewal require
+                a reachable issuing CA within the relevant network.
               </p>
 
             </details>
@@ -1125,9 +1166,10 @@ const githubUrl = "https://github.com/Trustpoint-Project";
               </summary>
 
               <p>
-                Yes. Trustpoint Labs offers engineering support,
-                integration assistance, maintenance and SLA-based
-                support for commercial deployments.
+                Yes. Contract-based break/fix support is available for
+                eligible official Trustpoint releases. Integration, custom
+                engineering and consulting are separately scoped services.
+                See our <a href="/support/">Support page</a> for terms.
               </p>
 
             </details>
@@ -1164,6 +1206,10 @@ const githubUrl = "https://github.com/Trustpoint-Project";
 
 
         <div class="footer-links">
+
+          <a href="/engineering-integration/">Engineering &amp; Integration</a>
+          <a href="/support/">Support</a>
+          <a href="/use-cases/">Use Cases</a>
 
           <a href="#offering">
             Offering
