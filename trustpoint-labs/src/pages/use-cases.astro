@@ -93,7 +93,6 @@ const githubUrl = "https://github.com/Trustpoint-Project";
             <a href="#explorer" class="use-cases-sidebar-link">Use Case Explorer</a>
             <a href="#integration-levels" class="use-cases-sidebar-link">Integration Levels</a>
             <a href="#verticals" class="use-cases-sidebar-link">Verticals</a>
-            <a href="#device-personalization" class="use-cases-sidebar-link">Device Personalization</a>
             <a href="#capabilities" class="use-cases-sidebar-link">Common Capabilities</a>
             <a href="#start-project" class="use-cases-sidebar-link">Start a Project</a>
           </nav>
@@ -138,11 +137,12 @@ const githubUrl = "https://github.com/Trustpoint-Project";
                 <span>02</span>
                 <div>
                   <strong>Choose an integration level</strong>
-                  <small>From embedded product integration to operator-wide infrastructure.</small>
+                  <small>From manufacturing personalization to operator-wide infrastructure.</small>
                 </div>
               </div>
 
               <div class="selector-row" role="group" aria-label="Choose an integration level">
+                <button class="selector-button level-button" type="button" data-level="personalization">Device Personalization</button>
                 <button class="selector-button level-button" type="button" data-level="oem">OEM / White Label</button>
                 <button class="selector-button level-button is-selected" type="button" data-level="domain">Domain Integration</button>
                 <button class="selector-button level-button" type="button" data-level="operator">Operator Integration</button>
@@ -229,11 +229,16 @@ const githubUrl = "https://github.com/Trustpoint-Project";
               INTEGRATION LEVELS
             </div>
 
-            <h2>From embedded product to operational infrastructure.</h2>
+            <h2>From device personalization to operational infrastructure.</h2>
 
             <div class="level-grid">
               <article class="level-card">
                 <span>01</span>
+                <h3>Device Personalization</h3>
+                <p>Provision one device with security material during manufacturing or initial setup: secure boot keys, bootstrap credentials, trust anchors, trust stores, IDevIDs and symmetric keys. These are potential provisioning workflows, not a claim of current feature availability.</p>
+              </article>
+              <article class="level-card">
+                <span>02</span>
                 <h3>OEM / White Label</h3>
                 <p>
                   Trustpoint becomes part of another vendor's product, appliance
@@ -243,7 +248,7 @@ const githubUrl = "https://github.com/Trustpoint-Project";
               </article>
 
               <article class="level-card">
-                <span>02</span>
+                <span>03</span>
                 <h3>Domain Integration</h3>
                 <p>
                   Trustpoint is deployed inside a defined operational domain such
@@ -254,7 +259,7 @@ const githubUrl = "https://github.com/Trustpoint-Project";
               </article>
 
               <article class="level-card">
-                <span>03</span>
+                <span>04</span>
                 <h3>Operator Integration</h3>
                 <p>
                   Trustpoint is deployed at operator level and coordinates identity
@@ -310,45 +315,6 @@ const githubUrl = "https://github.com/Trustpoint-Project";
                   high requirements for trust, sovereignty and lifecycle management.
                 </p>
               </article>
-            </div>
-          </section>
-
-          <section id="device-personalization" class="use-cases-section">
-            <div class="section-label compact-label">
-              <span class="square"></span>
-              DEVICE PERSONALIZATION
-            </div>
-
-            <h2>Establish identity before the device reaches its operational domain.</h2>
-
-            <p>
-              Device personalization is an adjacent use case for manufacturers and
-              OEMs. Trustpoint can support scenarios in which devices receive an
-              initial cryptographic identity or bootstrap credentials during
-              manufacturing or provisioning.
-            </p>
-
-            <div class="personalization-grid">
-              <div>
-                <h3>Typical scenarios</h3>
-                <ul class="arrow-list">
-                  <li>Initial device identity provisioning</li>
-                  <li>Manufacturer-issued certificates</li>
-                  <li>IDevID / DevID-related workflows</li>
-                  <li>Bootstrap credentials for later onboarding</li>
-                  <li>Ownership-related credentials</li>
-                  <li>Preparation for secure transfer into the operator domain</li>
-                </ul>
-              </div>
-
-              <div class="adjacent-callout">
-                <span>ADJACENT USE CASE</span>
-                <p>
-                  Device personalization is not currently a primary Trustpoint focus,
-                  but it is a relevant extension of the machine-identity lifecycle and
-                  an important integration point for OEM and manufacturing scenarios.
-                </p>
-              </div>
             </div>
           </section>
 
@@ -471,7 +437,7 @@ const githubUrl = "https://github.com/Trustpoint-Project";
             capabilities: ['External PKI / RA', 'Multi-domain lifecycle', 'REST', 'Audit logging', 'Offline operation'],
             outcome: 'Operators gain consistent machine-identity lifecycle management across production environments while keeping PKI integration close to OT.',
             operatorLabel: 'Enterprise PKI / Central Security',
-            trustpointLabel: 'Operator Trustpoint Layer',
+            trustpointLabel: 'Operator Layer',
             domainLabel: 'Factories / Production Domains',
             assetsLabel: 'Machines · Cells · Gateways · OT Apps',
             architectureNote: 'Trustpoint bridges centralized PKI and governance with multiple operational production domains.',
@@ -521,7 +487,7 @@ const githubUrl = "https://github.com/Trustpoint-Project";
             capabilities: ['External PKI / RA', 'Multi-domain lifecycle', 'REST', 'Audit logging', 'Segmented deployment'],
             outcome: 'The operator gains a consistent trust model across multiple buildings without centralizing every operational interaction.',
             operatorLabel: 'Enterprise / Facility PKI',
-            trustpointLabel: 'Operator Trustpoint Layer',
+            trustpointLabel: 'Operator Layer',
             domainLabel: 'Buildings / Building Domains',
             assetsLabel: 'BMS · HVAC · Access · Gateways',
             architectureNote: 'Trustpoint links multiple building domains with centralized operator PKI and governance.',
@@ -571,7 +537,7 @@ const githubUrl = "https://github.com/Trustpoint-Project";
             capabilities: ['Multi-site lifecycle', 'External PKI / RA', 'Audit logging', 'Segmented deployment', 'Local operation'],
             outcome: 'Central trust policy and local operational resilience can coexist across distributed critical infrastructure.',
             operatorLabel: 'Central PKI / Security Operations',
-            trustpointLabel: 'Operator Trustpoint Layer',
+            trustpointLabel: 'Operator Layer',
             domainLabel: 'Distributed Sites / Stations',
             assetsLabel: 'Field Networks · RTUs · Gateways · Apps',
             architectureNote: 'Trustpoint connects distributed operational domains to centralized identity governance without removing local autonomy.',
@@ -621,7 +587,7 @@ const githubUrl = "https://github.com/Trustpoint-Project";
             capabilities: ['Multi-domain lifecycle', 'External PKI / RA', 'Offline operation', 'Audit logging', 'Sovereign deployment'],
             outcome: 'Central identity governance can be extended into disconnected operational domains without creating a permanent central dependency.',
             operatorLabel: 'Central Authority / PKI',
-            trustpointLabel: 'Operator Trustpoint Layer',
+            trustpointLabel: 'Operator Layer',
             domainLabel: 'Platforms / Operational Domains',
             assetsLabel: 'Vehicles · Mission Systems · Edge · Sites',
             architectureNote: 'Trustpoint links central authority with multiple operational domains while preserving local control and disconnected operation.',
@@ -687,6 +653,21 @@ const githubUrl = "https://github.com/Trustpoint-Project";
         }
       };
 
+      const personalizationItems = ['Secure Boot Keys', 'Bootstrap Credentials', 'Trust Anchors', 'Trust Stores', 'IDevIDs', 'Symmetric Keys'];
+      const personalizationScenario = {
+        kicker: 'DEVICE PERSONALIZATION',
+        title: 'Establish device trust during manufacturing and provisioning',
+        environment: 'A single device or product is prepared with cryptographic security material before deployment into its operational environment.',
+        role: 'Trustpoint can support secure provisioning workflows for device identities, boot integrity, initial access and trusted communication. Actual key handling depends on device hardware and integration requirements.',
+        assets: personalizationItems,
+        capabilities: ['Device identity provisioning', 'Secure boot material', 'Bootstrap provisioning', 'Trust anchor distribution', 'Key management integration'],
+        outcome: 'A device can enter its operational lifecycle with a defined cryptographic identity and trust configuration.',
+        operatorLabel: 'Manufacturer / External CA',
+        trustpointLabel: 'Personalization Station',
+        architectureNote: 'Private keys may be generated and retained within the device hardware rather than exported.',
+        cta: 'Discuss device personalization'
+      };
+
       const assetIcon = (asset) => {
         const name = asset.toLowerCase();
         const attrs = 'viewBox="0 0 24 24" role="presentation" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"';
@@ -726,25 +707,39 @@ const githubUrl = "https://github.com/Trustpoint-Project";
           </div>`;
       };
 
-      const trustpointCard = (label, logoUrl, modifier = '') => {
-        const showLogo = !modifier.includes('is-operator');
-        return `
+      const trustpointCard = (label, logoUrl, modifier = '') => `
         <div class="trustpoint-instance ${modifier}">
-          ${showLogo ? `<div class="trustpoint-logo-wrap">
+          <div class="trustpoint-logo-wrap">
             <img src="${logoUrl}" alt="Trustpoint" class="trustpoint-instance-logo" />
-          </div>` : ''}
+          </div>
           <div class="trustpoint-instance-copy">
             <span>TRUSTPOINT INSTANCE</span>
             <strong>${label}</strong>
             <small>Machine identity & certificate lifecycle</small>
           </div>
         </div>`;
-      };
 
       const renderTopology = (scenario) => {
         const body = document.getElementById('topology-body');
         const labels = topologyLabels[selectedVertical];
         const logoUrl = body.dataset.trustpointLogo;
+
+        if (selectedLevel === 'personalization') {
+          body.innerHTML = `
+            <div class="customer-environment is-personalization">
+              <div class="environment-header"><div><span>MANUFACTURING / PROVISIONING</span><strong>Device Personalization</strong></div></div>
+              ${trustpointCard('Personalization Station', logoUrl)}
+              <div class="domain-connector" aria-hidden="true"><span></span></div>
+              <div class="operational-domain-zone">
+                <div class="nested-zone-header"><span>TARGET DEVICE</span><strong>Device / Product</strong></div>
+                <div class="asset-heading-row"><span class="asset-heading">PROVISIONED SECURITY MATERIAL</span><span class="asset-count">6 ITEMS</span></div>
+                <div class="asset-grid personalization-materials">
+                  ${personalizationItems.map((item) => assetTile(item)).join('')}
+                </div>
+              </div>
+            </div>`;
+          return;
+        }
 
         if (selectedLevel === 'oem') {
           body.innerHTML = `
@@ -811,8 +806,8 @@ const githubUrl = "https://github.com/Trustpoint-Project";
       };
 
       const updateScenario = () => {
-        const scenario = scenarios[selectedVertical][selectedLevel];
-        document.getElementById('vertical-description').textContent = verticalDescriptions[selectedVertical];
+        const scenario = selectedLevel === 'personalization' ? personalizationScenario : scenarios[selectedVertical][selectedLevel];
+        document.getElementById('vertical-description').textContent = selectedLevel === 'personalization' ? 'A shared manufacturing and provisioning use case applicable across all verticals.' : verticalDescriptions[selectedVertical];
         document.getElementById('scenario-kicker').textContent = scenario.kicker;
         document.getElementById('scenario-title').textContent = scenario.title;
         document.getElementById('scenario-environment').textContent = scenario.environment;
@@ -1339,22 +1334,23 @@ const githubUrl = "https://github.com/Trustpoint-Project";
       }
 
       .trustpoint-logo-wrap {
-        display: grid;
-        width: 152px;
-        min-width: 152px;
-        max-width: 100%;
-        height: 82px;
-        place-items: center;
-        padding: 8px 12px;
-        border: 1px solid rgba(0, 74, 173, 0.08);
-        border-radius: 13px;
-        background: rgba(0, 74, 173, 0.04);
+        display: flex;
+        align-items: center;
+        width: 100%;
+        min-width: 0;
+        height: auto;
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        background: transparent;
       }
 
       .trustpoint-instance-logo {
-        width: 124px;
+        width: 148px;
+        max-width: 72%;
         max-height: 64px;
         object-fit: contain;
+        object-position: left center;
       }
 
       .trustpoint-instance-copy {
@@ -1652,6 +1648,8 @@ const githubUrl = "https://github.com/Trustpoint-Project";
 
       .level-card h3,
       .vertical-card h3,
+      .personalization-materials { margin-top: 16px; }
+      .is-personalization .trustpoint-instance { margin-bottom: 0; }
       .personalization-grid h3 {
         margin: 0;
         font-size: 24px;
@@ -1861,13 +1859,13 @@ const githubUrl = "https://github.com/Trustpoint-Project";
         }
 
         .trustpoint-logo-wrap {
-          width: 132px;
-          min-width: 132px;
-          height: 70px;
+          width: 100%;
+          min-width: 0;
+          height: auto;
         }
 
         .trustpoint-instance-logo {
-          width: 110px;
+          width: 132px;
         }
 
         .asset-flow-line {
